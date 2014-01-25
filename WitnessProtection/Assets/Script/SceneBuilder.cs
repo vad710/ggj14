@@ -35,4 +35,5 @@ public class SceneBuilder : MonoBehaviour {
 		clueBox.transform.position = new Vector3(.35f, .55f, -2);
 		clueText.text = "Man, what's up with apples";
 	}
+
 }
