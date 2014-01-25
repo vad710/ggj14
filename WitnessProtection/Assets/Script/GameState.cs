@@ -27,6 +27,22 @@
             this.WitnessToInvestigate = new HouseKeeperWitness();
         }
 
+		public void SwitchToBlind()
+		{
+			this.WitnessToInvestigate = new BlindWitness();
+		}
+
+		public void SwitchToHomeless()
+		{
+			this.WitnessToInvestigate = new HomelessWitness();
+		}
+
+		public void SwitchToMother()
+		{
+			this.WitnessToInvestigate = new MotherWitness();
+		}
+
+
         public string SampleData { get; set; }
 
     }
