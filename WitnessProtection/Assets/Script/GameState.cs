@@ -1,4 +1,4 @@
-﻿namespace Assets
+﻿namespace Assets.Script
 {
     public class GameState
     {
@@ -26,6 +26,8 @@
         {
             this.WitnessToInvestigate = new HouseKeeperWitness();
         }
+
+        public string SampleData { get; set; }
 
     }
 }
