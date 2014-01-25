@@ -5,7 +5,14 @@ namespace Assets.Script
     public class Notebook
     {
         private readonly List<string> _suspects = new List<string>(); 
-        private readonly List<string> _weapons = new List<string>(); 
+        private readonly List<string> _weapons = new List<string>();
+
+        public Notebook()
+        {
+            this.AddSuspect("Alberto");
+            this.AddSuspect("Brutus");
+            this.AddSuspect("Cassius");
+        }
 
         public void AddSuspect(string suspect)
         {
@@ -15,6 +22,11 @@ namespace Assets.Script
         public void AddWeapon(string weapon)
         {
             _weapons.Add(weapon);
+        }
+
+        public string[] GetSuspects()
+        {
+            return _suspects.ToArray();
         }
     }
 }
