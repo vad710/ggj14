@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Script;
+using UnityEngine;
 using System.Collections;
 
 public class SceneBuilder : MonoBehaviour {
@@ -9,17 +10,26 @@ public class SceneBuilder : MonoBehaviour {
 	public Camera theCamera;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () 
+    {
 		makeSceneForWitness(0);
 
 		theApple.setObjectProperties("Wow, an apple", new Vector3(-.6f,-.5f,-1), this);
 		theAxe.setObjectProperties("Wow, an axe", new Vector3(3,-.4f,-1), this);
+
+
+		this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+    private void MakeSceneForWitness(IWitness witness)
+    {
+        
+    }
 
 	void makeSceneForWitness(int whom){
 		//just one setup at the moment
