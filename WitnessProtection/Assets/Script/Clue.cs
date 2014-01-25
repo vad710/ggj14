@@ -31,7 +31,7 @@ public class Clue : MonoBehaviour {
 		textPosition = new Vector3(cluePosition.x, cluePosition.y - 1.8f, -2);
 	}
 
-	void didntSeeIt(){
+	public void disableIt(){
 		enabled = false;
 	}
 

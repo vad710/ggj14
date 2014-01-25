@@ -17,6 +17,7 @@ public class SceneBuilder : MonoBehaviour {
 		theApple.setObjectProperties("Wow, an apple", new Vector3(-.6f,-.5f,-1), this);
 		theAxe.setObjectProperties("Wow, an axe", new Vector3(3,-.4f,-1), this);
 
+		GameState.Instance().SwitchToHouseKeeper();
 
 		this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
 	}
@@ -28,7 +29,14 @@ public class SceneBuilder : MonoBehaviour {
 
     private void MakeSceneForWitness(IWitness witness)
     {
-        
+		if(witness.SawApple){
+			theApple.setObjectProperties(witness.AppleCommentary, witness.ApplePosition, this);
+		}
+		else{
+			theApple.disableIt();
+		}
+	//	theAxe.setObjectProperties(witness., this);
+
     }
 
 	void makeSceneForWitness(int whom){

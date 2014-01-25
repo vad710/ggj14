@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
   - enabled: 1
     path: Assets/Scenes/DesktopScene.unity
+  - enabled: 1
+    path: Assets/Scenes/NotebookScene.unity
