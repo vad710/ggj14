@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Script;
+using UnityEngine;
 using System.Collections;
 
 public class SceneBuilder : MonoBehaviour {
@@ -8,14 +9,22 @@ public class SceneBuilder : MonoBehaviour {
 	public GUITexture clueBox;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () 
+    {
 		makeSceneForWitness(0);
+
+        this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+    private void MakeSceneForWitness(IWitness witness)
+    {
+        
+    }
 
 	void makeSceneForWitness(int whom){
 		//just one setup at the moment
