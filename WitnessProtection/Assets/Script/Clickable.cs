@@ -6,7 +6,8 @@ namespace Assets.Script
     {
         SwitchToDesk,
         SwitchToFolder,
-        BeAwesome
+        BeAwesome,
+
     }
 
     public class Clickable : MonoBehaviour {
