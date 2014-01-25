@@ -49,7 +49,7 @@ namespace Assets.Script
 		}
 
 
-        public string SampleData { get; set; }
+        public string SampleData { get; set; } //TODO: remove this!
 
     }
 }
