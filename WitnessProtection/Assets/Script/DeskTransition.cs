@@ -4,7 +4,6 @@ using System.Collections;
 public class DeskTransition : MonoBehaviour {
 	public GameObject deskScene;
 	public GameObject motelScene;
-
 	bool showingDesk;
 
 	// Use this for initialization
@@ -25,6 +24,7 @@ public class DeskTransition : MonoBehaviour {
 
 		deskScene.SetActive(false);// = false;
 		motelScene.SetActive(true);// = false;
+
 	}
 
 	void goToDesk(){
