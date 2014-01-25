@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Text;
+using UnityEngine;
 
 namespace Assets.Script
 {
@@ -11,11 +12,12 @@ namespace Assets.Script
 
             var suspects = notebook.GetSuspects();
 
+            var suspectList = new StringBuilder();
+
             foreach (var suspect in suspects)
             {
-                
+                suspectList.AppendLine(suspect);
             }
-
         }
 	
         // Update is called once per frame
