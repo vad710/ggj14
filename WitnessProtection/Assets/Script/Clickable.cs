@@ -37,6 +37,11 @@ namespace Assets.Script
                     Application.LoadLevel("DesktopScene");
                 break;
 
+                case ClickCommands.BeAwesome:
+
+                    this.gameObject.GetComponentInChildren<TextMesh>().text = GameState.Instance().SampleData;
+
+                break;
             }
         }
 
