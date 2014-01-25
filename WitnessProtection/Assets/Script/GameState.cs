@@ -1,4 +1,6 @@
-﻿namespace Assets.Script
+﻿using Assets.Script.Witnesses;
+
+namespace Assets.Script
 {
     public class GameState
     {
