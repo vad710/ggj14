@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Assets.Script;
 using UnityEngine;
 
 namespace Assets.Script
@@ -6,8 +7,10 @@ namespace Assets.Script
     public class NotebookLoader : MonoBehaviour {
 
         // Use this for initialization
-        void Start ()
+        public void Start ()
         {
+            Debug.Log("Loading Notebook!");
+
             var notebook = GameState.Instance().DetectiveNotebook;
 
             var suspects = notebook.GetSuspects();
@@ -18,11 +21,16 @@ namespace Assets.Script
             {
                 suspectList.AppendLine(suspect);
             }
-        }
-	
-        // Update is called once per frame
-        void Update () {
-	
+
+            var guiTextObjects = this.GetComponentsInChildren<GUIText>();
+
+            foreach (var guiTextObject in guiTextObjects)
+            {
+                if (guiTextObject.name == "SuspectNames")
+                {
+                    guiTextObject.text = suspectList.ToString();
+                }
+            }
         }
     }
 }
