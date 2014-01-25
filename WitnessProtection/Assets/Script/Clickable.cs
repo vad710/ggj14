@@ -2,27 +2,42 @@
 
 namespace Assets.Script
 {
+    public enum ClickCommands
+    {
+        SwitchToDesk,
+        SwitchToFolder,
+        BeAwesome
+    }
+
     public class Clickable : MonoBehaviour {
-        public string onMouseDown;
+        
         public string onMouseOver;
         public string onMouseExit;
-	
-        void OnMouseOver(){
+
+        public ClickCommands OnClickCommand; 
+        
+
+
+        public void OnMouseOver(){
             if(onMouseOver == null){return;}
         }
 	
-        void OnMouseExit(){
+        public void OnMouseExit(){
             if(onMouseExit == null){return;}
         }
 	
-        void OnMouseDown()
+        public void OnMouseDown()
         {
-            if (onMouseDown == "")
+            Debug.Log(string.Format("OnMouseDown {0}", this.OnClickCommand));
+            
+            switch (OnClickCommand)
             {
-                GameState.Instance().SampleData = "I just came from the news scene!";
-                Application.LoadLevel("");
+                case ClickCommands.SwitchToDesk:
+                    GameState.Instance().SampleData = "I just came from the news scene!";
+                    Application.LoadLevel("DesktopScene");
+                break;
+
             }
-		
         }
 
     }
