@@ -7,13 +7,6 @@ namespace Assets.Script
         private readonly List<string> _suspects = new List<string>(); 
         private readonly List<string> _weapons = new List<string>();
 
-        public Notebook()
-        {
-            this.AddSuspect("Alberto");
-            this.AddSuspect("Brutus");
-            this.AddSuspect("Cassius");
-        }
-
         public void AddSuspect(string suspect)
         {
             _suspects.Add(suspect);
