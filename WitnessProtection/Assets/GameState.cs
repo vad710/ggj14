@@ -18,5 +18,14 @@
 
             return _instance;
         }
+
+        public IWitness WitnessToInvestigate { get; private set; }
+
+
+        public void SwitchToHouseKeeper()
+        {
+            this.WitnessToInvestigate = new HouseKeeperWitness();
+        }
+
     }
 }
