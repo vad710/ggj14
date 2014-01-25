@@ -4,6 +4,7 @@ using System.Collections;
 public class DeskTransition : MonoBehaviour {
 	public GameObject deskScene;
 	public GameObject motelScene;
+	public GameObject toDeskButton;
 	bool showingDesk;
 
 	// Use this for initialization
@@ -16,6 +17,10 @@ public class DeskTransition : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void OnMouseDown(){
+
 	}
 
 	void goToMotel(){
