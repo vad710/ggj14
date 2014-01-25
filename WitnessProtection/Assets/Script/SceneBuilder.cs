@@ -5,39 +5,63 @@ using System.Collections;
 public class SceneBuilder : MonoBehaviour {
 	public Clue theApple;
 	public Clue theAxe;
+	public Clue blindClue1;
+	public Clue blindClue2;
+
 	public GUIText clueText;
 	public GUITexture clueBox;
 	public Camera theCamera;
+	public GameObject normalBackground;
+	public GameObject blindBackground;
 
 	// Use this for initialization
 	public void Start () 
     {
 		makeSceneForWitness(0);
 
-		theApple.setObjectProperties("Wow, an apple", new Vector3(-.6f,-.5f,-1), this);
-		theAxe.setObjectProperties("Wow, an axe", new Vector3(3,-.4f,-1), this);
+	//	theApple.setObjectProperties("Wow, an apple", new Vector3(-.6f,-.5f,-1), this);
+	//	theAxe.setObjectProperties("Wow, an axe", new Vector3(3,-.4f,-1), this);
 
 		GameState.Instance().SwitchToHouseKeeper();
-
 		this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(Input.GetKey("right")){
+			GameState.Instance().SwitchToHouseKeeper();
+			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
+			blindBackground.SetActive(false);
+			normalBackground.SetActive(true);
+		}
+		if(Input.GetKey("left")){
+			GameState.Instance().SwitchToBlind();
+			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
+			blindBackground.SetActive(true);
+			normalBackground.SetActive(false);
+		}
+		if(Input.GetKey("up")){
+			GameState.Instance().SwitchToHomeless();
+			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
+			blindBackground.SetActive(false);
+			normalBackground.SetActive(true);
+		}
+		if(Input.GetKey("down")){
+			GameState.Instance().SwitchToMother();
+			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
+			blindBackground.SetActive(false);
+			normalBackground.SetActive(true);
+		}
+
 	}
 
     private void MakeSceneForWitness(IWitness witness)
     {
-		if(witness.SawApple){
-			theApple.setObjectProperties(witness.AppleCommentary, witness.ApplePosition, this);
-		}
-		else{
-			theApple.disableIt();
-		}
-	//	theAxe.setObjectProperties(witness., this);
-
-    }
+		theApple.setObjectProperties(witness.AppleCommentary, witness.ApplePosition, witness.AppleSize, witness.SawApple, this);
+		theAxe.setObjectProperties(witness.AxeCommentary, witness.AxePosition, witness.AxeSize, witness.SawAxe, this);
+		blindClue1.setObjectProperties(witness.Blind1Commentary, witness.Blind1Position, witness.Blind1Size, witness.SawBlind1, this);
+		blindClue2.setObjectProperties(witness.Blind2Commentary, witness.Blind2Position, witness.Blind2Size, witness.SawBlind2, this);
+	}
 
 	void makeSceneForWitness(int whom){
 		//just one setup at the moment
