@@ -7,6 +7,8 @@ namespace Assets.Script
         private GameState()
         {
             //enforces instantiation via the singleton
+
+            this.DetectiveNotebook = new Notebook();
         }
 
         private static GameState _instance;
@@ -20,6 +22,8 @@ namespace Assets.Script
 
             return _instance;
         }
+
+        public Notebook DetectiveNotebook { get; private set; }
 
         public IWitness WitnessToInvestigate { get; private set; }
 
