@@ -2,10 +2,13 @@
 
 namespace Assets.Script
 {
+
     public enum ClickCommands
     {
-        SwitchToDesk,
-        SwitchToFolder,
+		SwitchToDesk,
+		ToDeskFromMotel,
+		ToMotelFromDesk,
+
         BeAwesome,
 
     }
@@ -35,9 +38,17 @@ namespace Assets.Script
             {
                 case ClickCommands.SwitchToDesk:
                     GameState.Instance().SampleData = "I just came from the news scene!";
+					GameState.Instance().previousSceneString = "NewsScene";
                     Application.LoadLevel("DesktopScene");
                 break;
-
+				case ClickCommands.ToDeskFromMotel:
+					GameState.Instance().previousSceneString = "MainScene";
+					Application.LoadLevel("DesktopScene");
+				break;
+				case ClickCommands.ToMotelFromDesk:
+					GameState.Instance().previousSceneString = "DesktopScene";
+					Application.LoadLevel("MainScene");
+				break;
                 case ClickCommands.BeAwesome:
 
                     this.gameObject.GetComponentInChildren<TextMesh>().text = GameState.Instance().SampleData;

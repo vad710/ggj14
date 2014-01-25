@@ -7,7 +7,7 @@ namespace Assets.Script
         private GameState()
         {
             //enforces instantiation via the singleton
-
+			this.previousSceneString = "";
             this.DetectiveNotebook = new Notebook();
         }
 
@@ -22,6 +22,8 @@ namespace Assets.Script
 
             return _instance;
         }
+
+		public string previousSceneString { get; set; }
 
         public Notebook DetectiveNotebook { get; private set; }
 

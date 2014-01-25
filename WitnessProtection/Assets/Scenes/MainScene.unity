@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 152874139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -4, z: -1}
+  m_LocalPosition: {x: -6, y: -3.96681404, z: -1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1552378688}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMouseOver: 
   onMouseExit: 
-  OnClickCommand: 0
+  OnClickCommand: 1
 --- !u!1 &211947943
 GameObject:
   m_ObjectHideFlags: 0
