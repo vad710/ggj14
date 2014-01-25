@@ -32,7 +32,7 @@ public class SceneBuilder : MonoBehaviour {
 
 	void writeClue(){
 		clueBox.enabled = true;
-		clueBox.transform.position = new Vector3(.4f, .4f, -2);
+		clueBox.transform.position = new Vector3(.35f, .55f, -2);
 		clueText.text = "Man, what's up with apples";
 	}
 }
