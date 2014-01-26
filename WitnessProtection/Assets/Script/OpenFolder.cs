@@ -49,6 +49,8 @@ namespace Assets.Script
             OpenedFolder.SetActive(true);
 
 
+            var audioSource = GameObject.FindObjectOfType<AudioSource>();
+            audioSource.PlayOneShot(audioSource.clip);
 
             //HACK! -------------------------------------------
             const string polaroidLabel = "Polaroid";
