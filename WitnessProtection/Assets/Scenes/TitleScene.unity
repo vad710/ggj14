@@ -292,7 +292,7 @@ TextMesh:
 
     Nick Bergen
 
-    Vinny daSilva
+    Vinny DaSilva
 
     Andy Hall
 
@@ -344,11 +344,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.259494305
+      value: -.0641590953
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .285826921
+      value: -1.63201022
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
       propertyPath: m_LocalPosition.z
@@ -377,6 +377,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
       propertyPath: OnClickCommand
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 10200000, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4eba7fe5f0c21432c91dd4dfa1f0f904, type: 2}
@@ -444,7 +452,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.58710861
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -460,7 +468,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 756479981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: .165156633, y: -1.23867524, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -559,7 +567,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 9f65027ff852b4c5d97efc006a2abbdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ea577f0641c5d04ba2f60cd1392e478, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &829676290
 Transform:
@@ -568,7 +576,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 829676288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: -1, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -611,7 +619,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: af69a33f039904e46abecff82f82be0b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &989486891
 Transform:
@@ -620,7 +628,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 989486889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.47273064, y: 1.13757563, z: 0}
+  m_LocalPosition: {x: 6.2363143, y: 3.23299098, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -672,7 +680,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 445925156}
   m_GameObject: {fileID: 998935235}
-  m_Text: Back
+  m_Text: 
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -744,7 +752,7 @@ Transform:
   m_PrefabInternal: {fileID: 445925156}
   m_GameObject: {fileID: 1009254285}
   m_LocalRotation: {x: 0, y: 0, z: .0379414372, w: .999279976}
-  m_LocalPosition: {x: -.259494305, y: .285826921, z: 0}
+  m_LocalPosition: {x: -.0641590953, y: -1.63201022, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 998935238}
@@ -798,7 +806,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: af69a33f039904e46abecff82f82be0b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1053551889
 GameObject:
@@ -936,7 +944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1794894396
 Transform:
   m_ObjectHideFlags: 0
@@ -944,7 +952,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794894395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: -1.018466, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 60770290}
