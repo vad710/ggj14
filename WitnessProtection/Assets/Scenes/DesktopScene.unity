@@ -113,7 +113,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 10, y: 7}
+  m_Size: {x: 8, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &9618820
 MonoBehaviour:
@@ -868,7 +868,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 10, y: 7}
+  m_Size: {x: 8, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &717931130
 MonoBehaviour:
@@ -1149,7 +1149,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.x
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.y
@@ -1516,7 +1516,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 10, y: 7}
+  m_Size: {x: 8, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1267751104
 MonoBehaviour:
@@ -1668,7 +1668,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 10, y: 7}
+  m_Size: {x: 7, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1326745642
 SpriteRenderer:
@@ -2095,7 +2095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.x
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.y
@@ -2195,12 +2195,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.y
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: OpenFolderSound
       value: 
       objectReference: {fileID: 8300000, guid: 4d7a938b11cb1483b8db27ee25b3fb8d, type: 3}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Center.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1540197269}
@@ -2719,7 +2723,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.x
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.y
@@ -2892,7 +2896,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.x
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: m_Size.y
@@ -2946,8 +2950,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 10, y: 7}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 10, y: 5}
+  m_Center: {x: 0, y: 1}
 --- !u!114 &2021279783
 MonoBehaviour:
   m_ObjectHideFlags: 0
