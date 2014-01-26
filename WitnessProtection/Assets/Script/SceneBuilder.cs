@@ -145,7 +145,7 @@ public class SceneBuilder : MonoBehaviour {
 				achievementFace.sprite = dannySprite;
 			}
 		}
-		if(theText == "That's where I shoved the hobo's face"){
+		if(theText == "That's where I shoved that hobo/thief’s face in."){
 			if(!GameState.Instance().EliUnlocked){
 				writeAchievement("New Witness: Eli\nRelation: Hobo");
 				GameState.Instance().EliUnlocked = true;
