@@ -1,4 +1,4 @@
-﻿using Assets.Script.Witnesses;
+﻿using System;
 using UnityEngine;
 
 namespace Assets.Script
@@ -28,9 +28,10 @@ namespace Assets.Script
 
 		public string previousSceneString { get; set; }
 
+        [Obsolete]
         public Notebook DetectiveNotebook { get; private set; }
 
-        public IWitness WitnessToInvestigate { get; private set; }
+        public IWitness WitnessToInvestigate { get; set; }
 
         public void SetupResolution()
         {
@@ -42,27 +43,6 @@ namespace Assets.Script
                 _resolutionSet = true;
             }
         }
-
-
-        public void SwitchToHouseKeeper()
-        {
-            this.WitnessToInvestigate = new HouseKeeperWitness();
-        }
-
-		public void SwitchToBlind()
-		{
-			this.WitnessToInvestigate = new BlindWitness();
-		}
-
-		public void SwitchToHomeless()
-		{
-			this.WitnessToInvestigate = new HomelessWitness();
-		}
-
-		public void SwitchToMother()
-		{
-			this.WitnessToInvestigate = new MotherWitness();
-		}
 
     }
 }
