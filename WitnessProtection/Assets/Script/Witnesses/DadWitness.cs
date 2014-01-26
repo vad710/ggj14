@@ -8,9 +8,9 @@ namespace Assets.Script.Witnesses
 	// Use this for initialization
 	public DadWitness () {
 		this.SawGun = true;
-		this.GunPosition = new Vector2(4.6f,-3.3f);
-		this.GunSize = new Vector2(.6f,.6f);
-		this.GunCommentary = "I can't believe she stole my gun";
+			this.GunPosition = new Vector2(-.26f, -2.3f);
+			this.GunSize = new Vector2(1,1);
+			this.GunCommentary = "I can't believe she stole my gun";
 		
 		this.SawPurse = false;
 			this.PursePosition = new Vector2(-5.92f, -.25f);
@@ -18,19 +18,19 @@ namespace Assets.Script.Witnesses
 			this.PurseCommentary = "";
 		
 		this.SawToy = false;
-		this.ToyPosition = new Vector2(-4.9f,-.9f);
-		this.ToySize = new Vector2(.6f,.6f);
-		this.ToyCommentary = "";
+			this.ToyPosition = new Vector2(4.57f,-4.0f);
+			this.ToySize = new Vector2(1,1);
+			this.ToyCommentary = "";
 		
 		this.SawHole = true;
-		this.HolePosition = new Vector2(-2,4);
-		this.HoleSize = new Vector2(.7f,.7f);
-		this.HoleCommentary = "That's where I shoved the hobo's face";
+			this.HolePosition = new Vector2(-1.76f,3.37f);
+			this.HoleSize = new Vector2(1,1);
+			this.HoleCommentary = "That's where I shoved the hobo's face";
 
 		this.SawJacket = true;
-		this.JacketPosition = new Vector2(2,-2);
-		this.JacketSize = new Vector2(.7f,.7f);
-		this.JacketCommentary = "That's the jacket I got Olivia for her birthday";
+			this.JacketPosition = new Vector2(-5.12f,-3.75f);
+			this.JacketSize = new Vector2(1,1);
+			this.JacketCommentary = "That's the jacket I got Olivia for her birthday";
 
 	}
 
