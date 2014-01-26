@@ -7,23 +7,23 @@ namespace Assets.Script.Witnesses
 		public BlindWitness()
         {
 			this.SawGun = true;
-			this.GunPosition = new Vector2(4.6f,-3.3f);
-			this.GunSize = new Vector2(.6f,.6f);
+			this.GunPosition = new Vector2(-.26f, -2.3f);
+			this.GunSize = new Vector2(1,1);
 			this.GunCommentary = "I heard a shot prior to hearing a lot of scuffling";
 			
 			this.SawPurse = false;
-			this.PursePosition = new Vector2(-1.1f,1.12f);
-			this.PurseSize = new Vector2(.6f,.6f);
+			this.PursePosition = new Vector2(-5.92f, -.25f);
+			this.PurseSize = new Vector2(1,1);
 			this.PurseCommentary = "";
 			
 			this.SawToy = false;
-			this.ToyPosition = new Vector2(-4.9f,-.9f);
-			this.ToySize = new Vector2(.6f,.6f);
+			this.ToyPosition = new Vector2(4.57f,-4.0f);
+			this.ToySize = new Vector2(1,1);
 			this.ToyCommentary = "";
 			
 			this.SawHole = true;
-			this.HolePosition = new Vector2(-2,4);
-			this.HoleSize = new Vector2(.7f,.7f);
+			this.HolePosition = new Vector2(-1.76f,3.37f);
+			this.HoleSize = new Vector2(1,1);
 			this.HoleCommentary = "There was a fight!  I heard it!";
 
 			this.SawJacket = false;

@@ -12,8 +12,8 @@ namespace Assets.Script.Witnesses
 			this.GunCommentary = "";
 			
 			this.SawPurse = true;
-			this.PursePosition = new Vector2(-1.1f,1.12f);
-			this.PurseSize = new Vector2(.6f,.6f);
+			this.PursePosition = new Vector2(-5.92f, -.25f);
+			this.PurseSize = new Vector2(1,1);
 			this.PurseCommentary = "That's what I came in here looking for.";
 			
 			this.SawToy = false;

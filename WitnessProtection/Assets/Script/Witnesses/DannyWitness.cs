@@ -14,9 +14,9 @@ namespace Assets.Script.Witnesses
 		this.GunCommentary = "My mommy tells me never to play with guns.";
 		
 		this.SawPurse = false;
-		this.PursePosition = new Vector2(-1.1f,1.12f);
-		this.PurseSize = new Vector2(.6f,.6f);
-		this.PurseCommentary = "";
+			this.PursePosition = new Vector2(-5.92f, -.25f);
+			this.PurseSize = new Vector2(1,1);
+			this.PurseCommentary = "";
 		
 		this.SawToy = true;
 		this.ToyPosition = new Vector2(-4.9f,-.9f);

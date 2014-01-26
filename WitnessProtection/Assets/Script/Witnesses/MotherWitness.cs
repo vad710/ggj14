@@ -12,8 +12,8 @@ namespace Assets.Script.Witnesses
 			this.GunCommentary = "I took the gun to defend myself against Caleb";
 			
 			this.SawPurse = true;
-			this.PursePosition = new Vector2(-1.1f,1.12f);
-			this.PurseSize = new Vector2(.6f,.6f);
+			this.PursePosition = new Vector2(-5.92f, -.25f);
+			this.PurseSize = new Vector2(1,1);
 			this.PurseCommentary = "That's not where I left my purse...";
 
 			this.SawToy = true;
