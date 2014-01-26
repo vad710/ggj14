@@ -16,8 +16,10 @@ namespace Assets.Script
         public const string OliviaName = "Olivia";
     }
 
-    public class OpenFolder : MonoBehaviour 
+    public class OpenFolder : MonoBehaviour
     {
+
+        public AudioClip OpenFolderSound;
 
 
         /// <summary>
@@ -50,7 +52,7 @@ namespace Assets.Script
 
 
             var audioSource = GameObject.FindObjectOfType<AudioSource>();
-            audioSource.PlayOneShot(audioSource.clip);
+            audioSource.PlayOneShot(OpenFolderSound);
 
             //HACK! -------------------------------------------
             const string polaroidLabel = "Polaroid";
