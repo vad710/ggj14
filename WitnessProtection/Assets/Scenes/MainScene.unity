@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 152874139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -3.96681404, z: -1}
+  m_LocalPosition: {x: -6, y: 4, z: -1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1552378688}
@@ -225,6 +225,53 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 9ea80c981691140c3956b3847c939fac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &243814761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 243814762}
+  - 131: {fileID: 243814763}
+  m_Layer: 0
+  m_Name: Achievement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &243814762
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243814761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .170000002, y: .100000001, z: 0}
+  m_LocalScale: {x: .100000001, y: 0, z: 1}
+  m_Children:
+  - {fileID: 1081767052}
+  m_Father: {fileID: 0}
+--- !u!131 &243814763
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243814761}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 081819a6fe1a34446826c2e00bcfc41d, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &414075186
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +666,56 @@ Transform:
   m_LocalScale: {x: .591917992, y: .591916978, z: 1}
   m_Children: []
   m_Father: {fileID: 1552378688}
+--- !u!1 &1081767050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1081767052}
+  - 132: {fileID: 1081767051}
+  m_Layer: 0
+  m_Name: AchievementText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &1081767051
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1081767050}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: New Witness! The duuuuuude
+  m_Anchor: 4
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1081767052
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1081767050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 243814762}
 --- !u!1 &1305416013
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +890,8 @@ MonoBehaviour:
   theJacket: {fileID: 1510050087}
   clueText: {fileID: 660686791}
   clueBox: {fileID: 1305416015}
+  achievementText: {fileID: 1081767051}
+  achievementBox: {fileID: 243814763}
   theCamera: {fileID: 1041249518}
   normalBackground: {fileID: 936762527}
   blindBackground: {fileID: 2126695670}
