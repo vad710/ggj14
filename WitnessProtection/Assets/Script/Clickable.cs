@@ -40,10 +40,14 @@ namespace Assets.Script
 					GameState.Instance().previousSceneString = "NewsScene";
                     Application.LoadLevel("DesktopScene");
                 break;
+
+
 				case ClickCommands.ToDeskFromMotel:
 					GameState.Instance().previousSceneString = "MainScene";
 					Application.LoadLevel("DesktopScene");
 				break;
+
+
 				case ClickCommands.ToMotelFromDesk:
 					GameState.Instance().previousSceneString = "DesktopScene";
 					Application.LoadLevel("MainScene");

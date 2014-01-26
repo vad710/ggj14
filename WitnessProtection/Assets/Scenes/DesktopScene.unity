@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
+  WitnessName: 
 --- !u!212 &9618821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -224,6 +225,81 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &306076392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 306076393}
+  - 212: {fileID: 306076396}
+  - 61: {fileID: 306076395}
+  - 114: {fileID: 306076394}
+  m_Layer: 0
+  m_Name: back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &306076393
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306076392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.41915894, y: -4.52850199, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1903408426}
+--- !u!114 &306076394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306076392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ea9be71f94c1045921cbd4d519b2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpenedFolder: {fileID: 0}
+--- !u!61 &306076395
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306076392}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 2, y: .75}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &306076396
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306076392}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: ee05c5f1be0d25e478026db79eeef2b5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &346724668
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
+  WitnessName: 
 --- !u!212 &637223902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -518,6 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
+  WitnessName: 
 --- !u!212 &717931131
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -860,6 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
+  WitnessName: 
 --- !u!212 &1267751105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1034,6 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
+  WitnessName: 
 --- !u!1 &1440130328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,6 +1633,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 306076393}
   - {fileID: 377941269}
   m_Father: {fileID: 1253026860}
 --- !u!1 &1997405475
@@ -1689,6 +1770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
+  WitnessName: 
 --- !u!212 &2021279784
 SpriteRenderer:
   m_ObjectHideFlags: 0
