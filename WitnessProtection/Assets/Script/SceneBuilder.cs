@@ -12,7 +12,6 @@ public class SceneBuilder : MonoBehaviour {
 	public Clue theToy;
 	public Clue theHole;
 	public Clue theJacket;
-//	public Clue clearClue;
 
 	public SpriteRenderer upperCornerPhoto;
 
@@ -23,9 +22,6 @@ public class SceneBuilder : MonoBehaviour {
 	public Sprite dannySprite;
 	public Sprite martaSprite;
 
-//	public GUIText clueText;
-//	public GUITexture clueBox;
-//	public GUITexture clueFace;
 
 	public GameObject cluePopUp;
 	public SpriteRenderer clueFace;
@@ -43,6 +39,14 @@ public class SceneBuilder : MonoBehaviour {
 	public AudioClip ClueSound2;
 
 	int tick;
+
+
+    public AudioClip EthanMusic;
+    public AudioClip DannyMusic;
+    public AudioClip EliMusic;
+    public AudioClip MartaMusic;
+    public AudioClip CalebMusic;
+    public AudioClip OliviaMusic;
 
 	// Use this for initialization
 	public void Start () 
@@ -71,30 +75,47 @@ public class SceneBuilder : MonoBehaviour {
 		theJacket.setObjectProperties(witness.JacketCommentary, witness.JacketPosition, witness.JacketSize, witness.SawJacket, this);
 	//	clearClue.setObjectProperties("", new Vector3(-20,-20,5), new Vector3(0,0,0), false, this);
 
+        var audioSource = GameObject.FindObjectOfType<AudioSource>();
+
 		if(witness.WhoAmI == "Ethan"){
 			blindBackground.SetActive(true);
 			upperCornerPhoto.sprite = ethanSprite;
+
+            audioSource.clip = EthanMusic;
+            
 		}
 		else if(witness.WhoAmI == "Eli"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = eliSprite;
+
+		    audioSource.clip = EliMusic;
 		}
 		else if(witness.WhoAmI == "Olivia"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = oliviaSprite;
+
+		    audioSource.clip = OliviaMusic;
 		}
 		else if(witness.WhoAmI == "Marta"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = martaSprite;
+
+		    audioSource.clip = MartaMusic;
 		}
 		else if(witness.WhoAmI == "Danny"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = dannySprite;
+
+		    audioSource.clip = DannyMusic;
 		}
 		else if(witness.WhoAmI == "Caleb"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = calebSprite;
+
+		    audioSource.clip = CalebMusic;
 		}
+
+        audioSource.Play();
 
 	//	writeAchievement("New Witness! The duuuude");
 	}

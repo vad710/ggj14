@@ -1082,7 +1082,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: c8cffaa2e2b1545469fb93d6c795e1bb, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1449,6 +1449,12 @@ MonoBehaviour:
   blindBackground: {fileID: 2126695670}
   ClueSound: {fileID: 8300000, guid: 9ff541a9534a74ce28b923f408320e97, type: 3}
   ClueSound2: {fileID: 8300000, guid: 5cbfbeda83b2e437fa2cf27173080faa, type: 3}
+  EthanMusic: {fileID: 8300000, guid: cc7c8e6e75e0ebc4dbd0bf0be10eb03f, type: 3}
+  DannyMusic: {fileID: 8300000, guid: c8cffaa2e2b1545469fb93d6c795e1bb, type: 3}
+  EliMusic: {fileID: 8300000, guid: 8a1fbc9be53a0ef46bfd01cea1a1a08a, type: 3}
+  MartaMusic: {fileID: 8300000, guid: a74a05dc5ec45a448b3cce9a9226a077, type: 3}
+  CalebMusic: {fileID: 8300000, guid: cf6442acbb006654d943a3adf78b1a92, type: 3}
+  OliviaMusic: {fileID: 8300000, guid: fc01bd34367a8d7479544c72dc7bb839, type: 3}
 --- !u!1001 &1610761823
 Prefab:
   m_ObjectHideFlags: 0
