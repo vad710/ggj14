@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
-  WitnessName: 
+  WitnessName: Caleb
 --- !u!212 &9618821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
-  WitnessName: 
+  WitnessName: Danny
 --- !u!212 &637223902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
-  WitnessName: 
+  WitnessName: Olivia
 --- !u!212 &717931131
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -671,6 +671,10 @@ Prefab:
       propertyPath: OpenedFolder
       value: 
       objectReference: {fileID: 1903408425}
+    - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: WitnessName
+      value: Marta
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1759280364}
@@ -938,7 +942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
-  WitnessName: 
+  WitnessName: Eli
 --- !u!212 &1267751105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1113,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
-  WitnessName: 
+  WitnessName: Marta
 --- !u!1 &1440130328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1245,10 @@ Prefab:
       propertyPath: OpenedFolder
       value: 
       objectReference: {fileID: 1903408425}
+    - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: WitnessName
+      value: Eli
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1071744424}
@@ -1321,6 +1329,10 @@ Prefab:
       propertyPath: OpenedFolder
       value: 
       objectReference: {fileID: 1903408425}
+    - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: WitnessName
+      value: Ethan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1540197269}
@@ -1377,6 +1389,10 @@ Prefab:
       propertyPath: OpenedFolder
       value: 
       objectReference: {fileID: 1903408425}
+    - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: WitnessName
+      value: Danny
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1997405475}
@@ -1603,6 +1619,10 @@ Prefab:
       propertyPath: OpenedFolder
       value: 
       objectReference: {fileID: 1903408425}
+    - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: WitnessName
+      value: Caleb
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1022450051}
@@ -1711,6 +1731,10 @@ Prefab:
       propertyPath: OpenedFolder
       value: 
       objectReference: {fileID: 1903408425}
+    - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: WitnessName
+      value: Olivia
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1247042643}
@@ -1770,7 +1794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenedFolder: {fileID: 1903408425}
-  WitnessName: 
+  WitnessName: Ethan
 --- !u!212 &2021279784
 SpriteRenderer:
   m_ObjectHideFlags: 0

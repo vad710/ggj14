@@ -1,4 +1,5 @@
-﻿using Assets.Script.Witnesses;
+﻿using System;
+using Assets.Script.Witnesses;
 using UnityEngine;
 
 namespace Assets.Script
@@ -28,11 +29,10 @@ namespace Assets.Script
 
             GameState.Instance().WitnessToInvestigate = this.GetSuspect(WitnessName);
 
-            //TODO: Setup data of the folder here
-
-
             //show the opened folder
             OpenedFolder.SetActive(true);
+            //TODO: Setup data of the folder here
+
         }
 
         private IWitness GetSuspect(string witnessName)
@@ -58,7 +58,7 @@ namespace Assets.Script
                     return new MotherWitness();
 
                 default:
-                    return null;
+                    throw new Exception("Unexpected Folder!");
             }
         }
     }
