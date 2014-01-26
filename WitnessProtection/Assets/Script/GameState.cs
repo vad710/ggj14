@@ -26,6 +26,8 @@ namespace Assets.Script
             return _instance;
         }
 
+        public GameObject LastFolder { get; set; }
+
 		public string previousSceneString { get; set; }
 
         [Obsolete]

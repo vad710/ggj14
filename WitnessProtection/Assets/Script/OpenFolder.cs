@@ -18,7 +18,13 @@ namespace Assets.Script
         public void OnMouseDown()
         {
             //hide the closed folder
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
+
+            var parent = this.gameObject.transform.parent.gameObject;
+
+            parent.SetActive(false);
+
+            GameState.Instance().LastFolder = parent;
 
             GameState.Instance().WitnessToInvestigate = this.GetSuspect(WitnessName);
 

@@ -9,8 +9,12 @@ namespace Assets.Script
 
         public void OnMouseDown()
         {
-            //Makes all closed folders visible
-
+            //makes the previously hidden closed folder visible again
+            if (GameState.Instance().LastFolder != null)
+            {
+                GameState.Instance().LastFolder.SetActive(true);    
+            }
+            
 
             //hides the opened folder
             OpenedFolder.SetActive(false);
