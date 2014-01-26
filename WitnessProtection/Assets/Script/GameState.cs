@@ -10,6 +10,9 @@ namespace Assets.Script
             //enforces instantiation via the singleton
 			this.previousSceneString = "";
             this.DetectiveNotebook = new Notebook();
+			this.CalebUnlocked = false;
+			this.EliUnlocked = false;
+			this.DannyUnlocked = false;
         }
 
         private static GameState _instance;
@@ -29,8 +32,11 @@ namespace Assets.Script
         public GameObject LastFolder { get; set; }
 
 		public string previousSceneString { get; set; }
+		public bool CalebUnlocked { get; set; }
+		public bool EliUnlocked { get; set; }
+		public bool DannyUnlocked { get; set; }
 
-        [Obsolete]
+		[Obsolete]
         public Notebook DetectiveNotebook { get; private set; }
 
         public IWitness WitnessToInvestigate { get; set; }

@@ -9,6 +9,7 @@ public class SceneBuilder : MonoBehaviour {
 	public Clue theToy;
 	public Clue theHole;
 	public Clue theJacket;
+	public Clue clearClue;
 
 	public GUIText clueText;
 	public GUITexture clueBox;
@@ -46,8 +47,9 @@ public class SceneBuilder : MonoBehaviour {
 		theToy.setObjectProperties(witness.ToyCommentary, witness.ToyPosition, witness.ToySize, witness.SawToy, this);
 		theHole.setObjectProperties(witness.HoleCommentary, witness.HolePosition, witness.HoleSize, witness.SawHole, this);
 		theJacket.setObjectProperties(witness.JacketCommentary, witness.JacketPosition, witness.JacketSize, witness.SawJacket, this);
+		clearClue.setObjectProperties("", new Vector3(-20,-20,5), new Vector3(0,0,0), false, this);
 
-		if(witness.WhoAmI == "BlindWitness"){
+		if(witness.WhoAmI == "Ethan"){
 			blindBackground.SetActive(true);
 		}
 		else{
@@ -79,14 +81,39 @@ public class SceneBuilder : MonoBehaviour {
 
 		clueBox.transform.position = new Vector3(clueBox.transform.position.x,clueBox.transform.position.y,-2);
 		clueText.text = theText;
+
+		checkForAchievements(theText);
+	}
+
+	void checkForAchievements(string theText){
+		if(theText == "I took the gun to defend myself against Caleb"){
+			if(!GameState.Instance().CalebUnlocked){
+				writeAchievement("New Witness: Caleb\nRelation: Father");
+				GameState.Instance().CalebUnlocked = true;
+			}
+		}
+		if(theText == "What is my son's toy doing here?"){
+			if(!GameState.Instance().DannyUnlocked){
+				Debug.Log("son's toy");
+				writeAchievement("New Witness: Danny\nRelation: Maid's Kid");
+				GameState.Instance().DannyUnlocked = true;
+			}
+		}
+		if(theText == "That's where I shoved the hobo's face"){
+			if(!GameState.Instance().EliUnlocked){
+				writeAchievement("New Witness: Eli\nRelation: Hobo");
+				GameState.Instance().EliUnlocked = true;
+			}
+		}
 	}
 
 	public void writeAchievement(string theText)
 	{
 		achievementBox.enabled = true;
+		achievementText.enabled = true;
 		achievementText.text = theText;
-		achievementBox.color = new Color(1,1,1,1);
-		achievementText.color = new Color(0,0,0,1);
+	//	achievementBox.color = new Color(1,1,1,1);
+	//	achievementText.color = new Color(0,0,0,1);
 
 		tick = 0;
 	}
@@ -97,9 +124,9 @@ public class SceneBuilder : MonoBehaviour {
 			if(tick < 60){
 				//achievementBox.color.a = 1;
 			}
-			else if(tick < 90){
-				achievementBox.color = new Color(1,1,1,(90.0f-tick)/30.0f);
-				achievementText.color = new Color(0,0,0,(90.0f-tick)/30.0f);
+			else if(tick < 290){
+			//	achievementBox.color = new Color(1,1,1,(90.0f-tick)/30.0f);
+			//	achievementText.color = new Color(0,0,0,(90.0f-tick)/30.0f);
 			}
 			else{
 				achievementBox.enabled = false;
