@@ -4,25 +4,30 @@ namespace Assets.Script
 {
     public interface IWitness 
     {
-        bool SawApple { get; }
-		Vector2 ApplePosition { get; }
-		Vector2 AppleSize { get; }
-        string AppleCommentary { get; }
+        bool SawGun { get; }
+		Vector2 GunPosition { get; }
+		Vector2 GunSize { get; }
+        string GunCommentary { get; }
 
-		bool SawAxe { get; }
-		Vector2 AxePosition { get; }
-		Vector2 AxeSize { get; }
-		string AxeCommentary { get; }
+		bool SawPurse { get; }
+		Vector2 PursePosition { get; }
+		Vector2 PurseSize { get; }
+		string PurseCommentary { get; }
 
-		bool SawBlind1 { get; }
-		Vector2 Blind1Position { get; }
-		Vector2 Blind1Size { get; }
-		string Blind1Commentary { get; }
+		bool SawToy { get; }
+		Vector2 ToyPosition { get; }
+		Vector2 ToySize { get; }
+		string ToyCommentary { get; }
 
-		bool SawBlind2 { get; }
-		Vector2 Blind2Position { get; }
-		Vector2 Blind2Size { get; }
-		string Blind2Commentary { get; }
+		bool SawHole { get; }
+		Vector2 HolePosition { get; }
+		Vector2 HoleSize { get; }
+		string HoleCommentary { get; }
 
-    }
+		bool SawJacket { get; }
+		Vector2 JacketPosition { get; }
+		Vector2 JacketSize { get; }
+		string JacketCommentary { get; }
+
+	}
 }

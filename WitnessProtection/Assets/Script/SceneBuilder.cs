@@ -3,10 +3,11 @@ using UnityEngine;
 using System.Collections;
 
 public class SceneBuilder : MonoBehaviour {
-	public Clue theApple;
-	public Clue theAxe;
-	public Clue blindClue1;
-	public Clue blindClue2;
+	public Clue theGun;
+	public Clue thePurse;
+	public Clue theToy;
+	public Clue theHole;
+	public Clue theJacket;
 
 	public GUIText clueText;
 	public GUITexture clueBox;
@@ -57,10 +58,11 @@ public class SceneBuilder : MonoBehaviour {
 
     private void MakeSceneForWitness(IWitness witness)
     {
-		theApple.setObjectProperties(witness.AppleCommentary, witness.ApplePosition, witness.AppleSize, witness.SawApple, this);
-		theAxe.setObjectProperties(witness.AxeCommentary, witness.AxePosition, witness.AxeSize, witness.SawAxe, this);
-		blindClue1.setObjectProperties(witness.Blind1Commentary, witness.Blind1Position, witness.Blind1Size, witness.SawBlind1, this);
-		blindClue2.setObjectProperties(witness.Blind2Commentary, witness.Blind2Position, witness.Blind2Size, witness.SawBlind2, this);
+		theGun.setObjectProperties(witness.GunCommentary, witness.GunPosition, witness.GunSize, witness.SawGun, this);
+		thePurse.setObjectProperties(witness.PurseCommentary, witness.PursePosition, witness.PurseSize, witness.SawPurse, this);
+		theToy.setObjectProperties(witness.ToyCommentary, witness.ToyPosition, witness.ToySize, witness.SawToy, this);
+		theHole.setObjectProperties(witness.HoleCommentary, witness.HolePosition, witness.HoleSize, witness.SawHole, this);
+		theJacket.setObjectProperties(witness.JacketCommentary, witness.JacketPosition, witness.JacketSize, witness.SawJacket, this);
 	}
 
 	void makeSceneForWitness(int whom){
