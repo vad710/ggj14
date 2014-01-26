@@ -7,28 +7,28 @@ namespace Assets.Script.Witnesses
         public HouseKeeperWitness()
         {
 			this.SawGun = false;
-			this.GunPosition = new Vector2(0,0);
-			this.GunSize = new Vector2(0,0);
+			this.GunPosition = new Vector2(4.6f,-3.3f);
+			this.GunSize = new Vector2(.6f,.6f);
 			this.GunCommentary = "";
 			
 			this.SawPurse = false;
-			this.PursePosition = new Vector2(0,0);
-			this.PurseSize = new Vector2(0,0);
+			this.PursePosition = new Vector2(-1.1f,1.12f);
+			this.PurseSize = new Vector2(.6f,.6f);
 			this.PurseCommentary = "";
 			
 			this.SawToy = true;
-			this.ToyPosition = new Vector2(0,0);
-			this.ToySize = new Vector2(0,0);
+			this.ToyPosition = new Vector2(-4.9f,-.9f);
+			this.ToySize = new Vector2(.6f,.6f);
 			this.ToyCommentary = "What is my son's toy doing here?";
 			
 			this.SawHole = true;
-			this.HolePosition = new Vector2(0,0);
-			this.HoleSize = new Vector2(0,0);
+			this.HolePosition = new Vector2(-2,4);
+			this.HoleSize = new Vector2(.7f,.7f);
 			this.HoleCommentary = "What happened here?";
 			
 			this.SawJacket = false;
-			this.JacketPosition = new Vector2(0,0);
-			this.JacketSize = new Vector2(0,0);
+			this.JacketPosition = new Vector2(2,-2);
+			this.JacketSize = new Vector2(.7f,.7f);
 			this.JacketCommentary = "";
 		}
 

@@ -26,12 +26,20 @@ public class Clue : MonoBehaviour {
 		clueText = theClue;
 		cluePosition = thePosition;
 		clueSize = theSize;
-		enabled = shown;
+		//enabled = shown;
+		this.gameObject.SetActive(shown);
 
 		this.gameObject.transform.localPosition = cluePosition;
 		this.gameObject.transform.localScale = clueSize;
 		//	Vector3 intermediatePos = Camera.WorldToScreenPoint(cluePosition);
-		textPosition = new Vector3(cluePosition.x, cluePosition.y - 1.8f, -2);
+
+		if(cluePosition.y < -2){
+			textPosition = new Vector3(cluePosition.x, cluePosition.y + 1.8f, -2);
+		}
+		else{
+			textPosition = new Vector3(cluePosition.x, cluePosition.y - 1.8f, -2);
+		}
+
 	}
 
 	public void disableIt(){

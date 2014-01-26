@@ -7,28 +7,28 @@ namespace Assets.Script.Witnesses
 		public HomelessWitness()
         {
 			this.SawGun = false;
-			this.GunPosition = new Vector2(0,0);
-			this.GunSize = new Vector2(0,0);
+			this.GunPosition = new Vector2(4.6f,-3.3f);
+			this.GunSize = new Vector2(.6f,.6f);
 			this.GunCommentary = "";
 			
 			this.SawPurse = true;
-			this.PursePosition = new Vector2(-2.2f,3.9f);
-			this.PurseSize = new Vector2(.7f,.7f);
+			this.PursePosition = new Vector2(-1.1f,1.12f);
+			this.PurseSize = new Vector2(.6f,.6f);
 			this.PurseCommentary = "That's what I came in here looking for.";
 			
 			this.SawToy = false;
-			this.ToyPosition = new Vector2(0,0);
-			this.ToySize = new Vector2(0,0);
+			this.ToyPosition = new Vector2(-4.9f,-.9f);
+			this.ToySize = new Vector2(.6f,.6f);
 			this.ToyCommentary = "";
 			
 			this.SawHole = true;
-			this.HolePosition = new Vector2(0,0);
-			this.HoleSize = new Vector2(0,0);
+			this.HolePosition = new Vector2(-2,4);
+			this.HoleSize = new Vector2(.7f,.7f);
 			this.HoleCommentary = "I was just lookin' for some cash... and that man tore in here like a barrel of whips!";
 			
 			this.SawJacket = true;
-			this.JacketPosition = new Vector2(0,0);
-			this.JacketSize = new Vector2(0,0);
+			this.JacketPosition = new Vector2(2,-2);
+			this.JacketSize = new Vector2(.7f,.7f);
 			this.JacketCommentary = "Boy, I could really use a nice jacket like that on these very cold nights.";
 		}
 
