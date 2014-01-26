@@ -4,6 +4,8 @@ namespace Assets.Script
 {
     public interface IWitness 
     {
+		string WhoAmI { get; }
+
         bool SawGun { get; }
 		Vector2 GunPosition { get; }
 		Vector2 GunSize { get; }

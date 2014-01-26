@@ -8,7 +8,9 @@ namespace Assets.Script.Witnesses
 
 	// Use this for initialization
 	public DannyWitness () {
-		this.SawGun = true;
+			this.WhoAmI = "DannyWitness";
+
+			this.SawGun = true;
 			this.GunPosition = new Vector2(-.26f, -2.3f);
 			this.GunSize = new Vector2(1,1);
 			this.GunCommentary = "My mommy tells me never to play with guns.";
@@ -33,7 +35,9 @@ namespace Assets.Script.Witnesses
 			this.JacketSize = new Vector2(1,1);
 			this.JacketCommentary = "";
 	}
-	
+
+	public string WhoAmI { get; private set; }
+
 	public bool SawGun { get; private set; }
 	public Vector2 GunPosition { get; private set; }
 	public Vector2 GunSize { get; private set; }

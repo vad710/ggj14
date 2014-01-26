@@ -7,7 +7,10 @@ namespace Assets.Script.Witnesses
 	{
 	// Use this for initialization
 	public DadWitness () {
-		this.SawGun = true;
+			this.WhoAmI = "DadWitness";
+
+			
+			this.SawGun = true;
 			this.GunPosition = new Vector2(-.26f, -2.3f);
 			this.GunSize = new Vector2(1,1);
 			this.GunCommentary = "I can't believe she stole my gun";
@@ -34,7 +37,9 @@ namespace Assets.Script.Witnesses
 
 	}
 
-	public bool SawGun { get; private set; }
+		public string WhoAmI { get; private set; }
+
+		public bool SawGun { get; private set; }
 	public Vector2 GunPosition { get; private set; }
 	public Vector2 GunSize { get; private set; }
 	public string GunCommentary { get; private set; }
