@@ -36,8 +36,8 @@ namespace Assets.Script.Witnesses
 			this.JacketCommentary = "";
 
 
-			this.LeftFolderText = "My life has been horrible and now it’s all over. My only child, my only son. You’ll never be able to understand detective. All I wanted to do is get away from my husband and have a chance at a normal life. Before Benny was killed I began to see my husband in him.. it’s like some bad dream except true.";
-			this.RightFolderText = "Does justice even matter at this point? If you want to do me justice, kill my husband! Look what he’s done to my face, LOOK! He is the devil and all that comes for him or touches him is evil to me.";
+			this.LeftFolderText = "My life has been horrible and now it’s all over. My only child, my only son. You’ll never be able to understand detective. All I wanted to do is get away from my husband and have a chance at a normal life. Before Benny was killed I began to see my husband in him.. it’s like some bad dream except true. Does justice even matter at this point? If you want to do me justice, kill my husband! Look what he’s done to my face, LOOK!";
+			this.RightFolderText = "He is the devil and all that comes for him or touches him is evil to me. I don’t how that demon found me, but he did. I left the room, and when I come back my son is dead, and that man was there.";
         }
 
 		public string WhoAmI { get; private set; }
