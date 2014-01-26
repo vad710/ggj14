@@ -60,6 +60,6 @@ namespace Assets.Script.Witnesses
 		public Vector2 JacketPosition { get; private set; }
 		public Vector2 JacketSize { get; private set; }
 		public string JacketCommentary { get; private set; }
-
-	}
+        public string LeftFolderText { get; set; }
+    }
 }

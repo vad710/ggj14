@@ -6,7 +6,7 @@ namespace Assets.Script.Witnesses
     {
 		public MotherWitness()
         {
-			this.WhoAmI = "MotherWitness";
+			this.WhoAmI = WitnessNames.OliviaName;
 
 			this.SawGun = true;
 			this.GunPosition = new Vector2(-.26f, -2.3f);
@@ -63,6 +63,6 @@ namespace Assets.Script.Witnesses
 		public Vector2 JacketPosition { get; private set; }
 		public Vector2 JacketSize { get; private set; }
 		public string JacketCommentary { get; private set; }
-
-	}
+        public string LeftFolderText { get; set; }
+    }
 }

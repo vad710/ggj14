@@ -31,5 +31,7 @@ namespace Assets.Script
 		Vector2 JacketSize { get; }
 		string JacketCommentary { get; }
 
+        string LeftFolderText { get; set; }
+
 	}
 }
