@@ -3,12 +3,10 @@ using System.Collections;
 
 public class ClearClues : MonoBehaviour {
 
-	public GUIText clueText;
-	public GUITexture clueBox;
+	public GameObject clueBox;
 
 	void OnMouseDown()
 	{
-		clueBox.enabled = false;
-		clueText.text = "";
+		clueBox.SetActive(false);
 	}
 }
