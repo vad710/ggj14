@@ -12,6 +12,7 @@ public class SceneBuilder : MonoBehaviour {
 	public Clue theToy;
 	public Clue theHole;
 	public Clue theJacket;
+	public GameObject theBody;
 
 	public SpriteRenderer upperCornerPhoto;
 
@@ -82,37 +83,42 @@ public class SceneBuilder : MonoBehaviour {
 			upperCornerPhoto.sprite = ethanSprite;
 
             audioSource.clip = EthanMusic;
-            
+			theBody.SetActive(true);
 		}
 		else if(witness.WhoAmI == "Eli"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = eliSprite;
 
 		    audioSource.clip = EliMusic;
+			theBody.SetActive(false);
 		}
 		else if(witness.WhoAmI == "Olivia"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = oliviaSprite;
 
 		    audioSource.clip = OliviaMusic;
+			theBody.SetActive(true);
 		}
 		else if(witness.WhoAmI == "Marta"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = martaSprite;
 
 		    audioSource.clip = MartaMusic;
+			theBody.SetActive(true);
 		}
 		else if(witness.WhoAmI == "Danny"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = dannySprite;
 
 		    audioSource.clip = DannyMusic;
+			theBody.SetActive(true);
 		}
 		else if(witness.WhoAmI == "Caleb"){
 			blindBackground.SetActive(false);
 			upperCornerPhoto.sprite = calebSprite;
 
 		    audioSource.clip = CalebMusic;
+			theBody.SetActive(false);
 		}
 
         audioSource.Play();
