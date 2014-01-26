@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Assets.Script.Witnesses;
+using UnityEditor;
 using UnityEngine;
 
 namespace Assets.Script
@@ -46,7 +47,23 @@ namespace Assets.Script
 
             //show the opened folder
             OpenedFolder.SetActive(true);
-            //TODO: Setup data of the folder here
+
+
+
+            //HACK! -------------------------------------------
+            const string polaroidLabel = "Polaroid";
+            var polaroidObjects = OpenedFolder.GetComponentsInChildren<SpriteRenderer>().Where(c => c.name.StartsWith(polaroidLabel)).ToList();
+
+            Debug.Log("Number of PolaroidObjects: " + polaroidObjects.Count());
+
+            foreach (var polaroidObject in polaroidObjects)
+            {
+                var enable = polaroidObject.name.EndsWith(witnessToInvestigate.WhoAmI);
+                
+                polaroidObject.enabled = enable;
+            }
+
+            //HACK! -------------------------------------------
 
 
             var leftSideText = OpenedFolder.GetComponentsInChildren<TextMesh>().First(c => c.name == "TextLeft");
