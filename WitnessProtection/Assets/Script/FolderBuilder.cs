@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace Assets.Script
 {
@@ -10,20 +9,18 @@ public class FolderBuilder : MonoBehaviour {
 	public GameObject closedFolder;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 
-		if(GameState.Instance().previousSceneString == "NewsScene"){
+        GameState.Instance().SetupResolution();
+
+		if(GameState.Instance().previousSceneString == "NewsScene" || string.IsNullOrEmpty(GameState.Instance().previousSceneString ))
+        {
 			showClosed ();
 		}
-		else{
+		else
+        {
 			showOpen ();
 		}
-	//	showClosed ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
 	void showOpen(){

@@ -37,7 +37,6 @@ namespace Assets.Script
             switch (OnClickCommand)
             {
                 case ClickCommands.SwitchToDesk:
-                    GameState.Instance().SampleData = "I just came from the news scene!";
 					GameState.Instance().previousSceneString = "NewsScene";
                     Application.LoadLevel("DesktopScene");
                 break;
@@ -49,11 +48,6 @@ namespace Assets.Script
 					GameState.Instance().previousSceneString = "DesktopScene";
 					Application.LoadLevel("MainScene");
 				break;
-                case ClickCommands.BeAwesome:
-
-                    this.gameObject.GetComponentInChildren<TextMesh>().text = GameState.Instance().SampleData;
-
-                break;
             }
         }
 
