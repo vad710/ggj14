@@ -846,7 +846,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 7199ae5f7d5f7c948a19a9d57cc6cae9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0558c4c500c7b44b6a3c9192731cfce4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &985570578
 GameObject:
@@ -1411,7 +1411,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 5691cc5e41c4304468c9a7e2d8f49bd5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 166cd967861a5413a9eb44697911a9e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1695812224
 GameObject:
