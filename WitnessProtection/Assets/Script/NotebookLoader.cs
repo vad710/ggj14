@@ -22,7 +22,7 @@ namespace Assets.Script
                 suspectList.AppendLine(suspect);
             }
 
-            var guiTextObject = this.GetComponentsInChildren<GUIText>().First(g => g.name == "SuspectNames");
+            var guiTextObject = this.GetComponentsInChildren<GUIText>().First(c => c.name == "SuspectNames");
 
             guiTextObject.text = suspectList.ToString();
 

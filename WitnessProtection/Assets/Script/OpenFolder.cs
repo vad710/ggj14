@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Assets.Script.Witnesses;
 using UnityEngine;
 
@@ -47,11 +48,22 @@ namespace Assets.Script
             OpenedFolder.SetActive(true);
             //TODO: Setup data of the folder here
 
+            //var count = GameObject.FindObjectsOfType<GUIText>().Count();
+            
+            //var count = OpenedFolder.GetComponentsInChildren<TextMesh>().Count();
+            //Debug.Log("text:" + count);
+
+            var leftSideText = OpenedFolder.GetComponentsInChildren<TextMesh>().First(c => c.name == "TextLeft");
+
+            leftSideText.text  = witnessToInvestigate.LeftFolderText;
+            leftSideText.GetComponent<TextWrapper>().Wrap();
 
             //TextLeft
             //GameObject.Find
             //GameObject.Find("TextLeft").GetComponents<GUIText>().text = witnessToInvestigate.LeftFolderText;
             //TODO: Update the text here
+
+
         }
 
         private IWitness GetSuspect(string witnessName)
