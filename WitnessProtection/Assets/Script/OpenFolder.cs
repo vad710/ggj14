@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Assets.Script.Witnesses;
-using UnityEditor;
 using UnityEngine;
 
 namespace Assets.Script
