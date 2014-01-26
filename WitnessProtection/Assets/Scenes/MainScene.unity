@@ -1435,9 +1435,9 @@ MonoBehaviour:
   ethanSprite: {fileID: 21300000, guid: 166cd967861a5413a9eb44697911a9e3, type: 3}
   eliSprite: {fileID: 21300000, guid: 65038ddff31924540ace9a64a3813540, type: 3}
   oliviaSprite: {fileID: 21300000, guid: 066f2325edceb4a51a6220d4d50d22a2, type: 3}
-  calebSprite: {fileID: 21300000, guid: 0558c4c500c7b44b6a3c9192731cfce4, type: 3}
-  dannySprite: {fileID: 21300000, guid: 066f2325edceb4a51a6220d4d50d22a2, type: 3}
-  martaSprite: {fileID: 21300000, guid: 066f2325edceb4a51a6220d4d50d22a2, type: 3}
+  calebSprite: {fileID: 21300000, guid: 00c431c7068d646a69187b912e630516, type: 3}
+  dannySprite: {fileID: 21300000, guid: 20e94000eceea9b40974c17fec7fe2fb, type: 3}
+  martaSprite: {fileID: 21300000, guid: f86d502791462384e82adbdd9cdef235, type: 3}
   cluePopUp: {fileID: 2035665257}
   clueFace: {fileID: 1495878788}
   clueText: {fileID: 334469958}
