@@ -21,12 +21,12 @@ namespace Assets.Script.Witnesses
 			this.SawToy = true;
 			this.ToyPosition = new Vector2(4.57f,-4.0f);
 			this.ToySize = new Vector2(1,1);
-			this.ToyCommentary = "I do not remember that toy...";
+			this.ToyCommentary = "I do not remember giving Benny that toy...";
 			
 			this.SawHole = true;
 			this.HolePosition = new Vector2(-1.76f,3.37f);
 			this.HoleSize = new Vector2(1,1);
-			this.HoleCommentary = "What happened here?";
+			this.HoleCommentary = "Just what happened here?";
 
 			////
 
@@ -36,8 +36,8 @@ namespace Assets.Script.Witnesses
 			this.JacketCommentary = "";
 
 
-            this.LeftFolderText = "My life has been horrible and now it’s all over. My only child, my only son. You’ll never be able to understand detective. All I wanted to do is get away from my husband and have a chance at a normal life. That man has ruined everything in me. Even before Benny was killed I began to see my husband in him.. it’s a like some bad dream, a horror tale, except it’s true. Does justice even matter at this point? If you want to do me justice, kill that man. Kill my husband! He doesn’t deserve to live, look what he’s done to my face, look what he’s done to my life. He is the devil and all that comes for him or touches him is evil to me.";
-            this.RightFolderText = "I don’t how that demon found me, but he did. I left the room, and when I come back my son is dead, and that man was there.";
+			this.LeftFolderText = "My life has been horrible and now it’s all over. My only child, my only son. You’ll never be able to understand detective. All I wanted to do is get away from my husband and have a chance at a normal life. Before Benny was killed I began to see my husband in him.. it’s like some bad dream except true.";
+			this.RightFolderText = "Does justice even matter at this point? If you want to do me justice, kill my husband! Look what he’s done to my face, LOOK! He is the devil and all that comes for him or touches him is evil to me.";
         }
 
 		public string WhoAmI { get; private set; }
