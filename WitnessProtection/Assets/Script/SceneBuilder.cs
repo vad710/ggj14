@@ -1,4 +1,5 @@
 ﻿using Assets.Script;
+using Assets.Script.Witnesses;
 using UnityEngine;
 using System.Collections;
 
@@ -20,40 +21,14 @@ public class SceneBuilder : MonoBehaviour {
     {
 		makeSceneForWitness(0);
 
-	//	theApple.setObjectProperties("Wow, an apple", new Vector3(-.6f,-.5f,-1), this);
-	//	theAxe.setObjectProperties("Wow, an axe", new Vector3(3,-.4f,-1), this);
+	    if (GameState.Instance().WitnessToInvestigate == null)
+	    {
+            //this is only for debugging - when the user gets here normally, the "WitnessToInvestigate" should already be set to an object
+ 
+	        GameState.Instance().WitnessToInvestigate = new HouseKeeperWitness();
+	    }
 
-		GameState.Instance().SwitchToHouseKeeper();
 		this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKey("right")){
-			GameState.Instance().SwitchToHouseKeeper();
-			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
-			blindBackground.SetActive(false);
-			normalBackground.SetActive(true);
-		}
-		if(Input.GetKey("left")){
-			GameState.Instance().SwitchToBlind();
-			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
-			blindBackground.SetActive(true);
-			normalBackground.SetActive(false);
-		}
-		if(Input.GetKey("up")){
-			GameState.Instance().SwitchToHomeless();
-			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
-			blindBackground.SetActive(false);
-			normalBackground.SetActive(true);
-		}
-		if(Input.GetKey("down")){
-			GameState.Instance().SwitchToMother();
-			this.MakeSceneForWitness(GameState.Instance().WitnessToInvestigate);
-			blindBackground.SetActive(false);
-			normalBackground.SetActive(true);
-		}
-
 	}
 
     private void MakeSceneForWitness(IWitness witness)
@@ -77,11 +52,12 @@ public class SceneBuilder : MonoBehaviour {
 	//	writeClue ();
 	}
 
-	public void writeClue(string theText, Vector3 thePosition){
+	public void writeClue(string theText, Vector3 thePosition)
+    {
 		clueBox.enabled = true;
 
-		Vector2 screenPosition = theCamera.WorldToScreenPoint(thePosition);
-		Vector2 guiPosition = new Vector2(screenPosition.x / Screen.width, screenPosition.y / Screen.height);
+		var screenPosition = theCamera.WorldToScreenPoint(thePosition);
+		var guiPosition = new Vector2(screenPosition.x / Screen.width, screenPosition.y / Screen.height);
 		clueBox.transform.position = GUIUtility.ScreenToGUIPoint(guiPosition);
 
 		clueBox.transform.position = new Vector3(clueBox.transform.position.x,clueBox.transform.position.y,-2);
