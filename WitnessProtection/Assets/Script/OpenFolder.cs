@@ -34,10 +34,10 @@ namespace Assets.Script
             switch (witnessName)
             {
                 case "Caleb":
-                    return null; //TODO: add the abusive husband here
+                    return new DadWitness();
 
                 case "Danny":
-                    return null; //TODO: add the kid here
+                    return new DannyWitness();
 
                 case "Ethan":
                     return new BlindWitness();
