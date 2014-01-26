@@ -56,7 +56,7 @@ public class SceneBuilder : MonoBehaviour {
 			blindBackground.SetActive(false);
 		}
 
-		writeAchievement("New Witness! The duuuude");
+	//	writeAchievement("New Witness! The duuuude");
 	}
 
 	void makeSceneForWitness(int whom){
