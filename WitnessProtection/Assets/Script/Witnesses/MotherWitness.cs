@@ -6,7 +6,7 @@ namespace Assets.Script.Witnesses
     {
 		public MotherWitness()
         {
-			this.WhoAmI = "MotherWitness";
+			this.WhoAmI = WitnessNames.OliviaName;
 
 			this.SawGun = true;
 			this.GunPosition = new Vector2(-.26f, -2.3f);
@@ -35,7 +35,10 @@ namespace Assets.Script.Witnesses
 			this.JacketSize = new Vector2(1,1);
 			this.JacketCommentary = "";
 
-		}
+
+            this.LeftFolderText = "My life has been horrible and now it’s all over. My only child, my only son. You’ll never be able to understand detective. All I wanted to do is get away from my husband and have a chance at a normal life. That man has ruined everything in me. Even before Benny was killed I began to see my husband in him.. it’s a like some bad dream, a horror tale, except it’s true. Does justice even matter at this point? If you want to do me justice, kill that man. Kill my husband! He doesn’t deserve to live, look what he’s done to my face, look what he’s done to my life. He is the devil and all that comes for him or touches him is evil to me.";
+            this.RightFolderText = "I don’t how that demon found me, but he did. I left the room, and when I come back my son is dead, and that man was there.";
+        }
 
 		public string WhoAmI { get; private set; }
 
@@ -63,6 +66,7 @@ namespace Assets.Script.Witnesses
 		public Vector2 JacketPosition { get; private set; }
 		public Vector2 JacketSize { get; private set; }
 		public string JacketCommentary { get; private set; }
-
-	}
+        public string LeftFolderText { get; set; }
+        public string RightFolderText { get; set; }
+    }
 }

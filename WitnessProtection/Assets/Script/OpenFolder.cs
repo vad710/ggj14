@@ -4,7 +4,19 @@ using UnityEngine;
 
 namespace Assets.Script
 {
-    public class OpenFolder : MonoBehaviour {
+    public struct WitnessNames
+    {
+        public const string EliName = "Eli";
+        public const string CalebName = "Caleb";
+        public const string DannyName = "Danny";
+        public const string EthanName = "Ethan";
+        public const string MartaName = "Marta";
+        public const string OliviaName = "Olivia";
+    }
+
+    public class OpenFolder : MonoBehaviour 
+    {
+
 
         /// <summary>
         /// Reference to the Opened Folder object
@@ -27,34 +39,41 @@ namespace Assets.Script
 
             GameState.Instance().LastFolder = parent;
 
-            GameState.Instance().WitnessToInvestigate = this.GetSuspect(WitnessName);
+            var witnessToInvestigate = this.GetSuspect(WitnessName);
+
+            GameState.Instance().WitnessToInvestigate = witnessToInvestigate;
 
             //show the opened folder
             OpenedFolder.SetActive(true);
             //TODO: Setup data of the folder here
 
+
+            //TextLeft
+            //GameObject.Find
+            //GameObject.Find("TextLeft").GetComponents<GUIText>().text = witnessToInvestigate.LeftFolderText;
+            //TODO: Update the text here
         }
 
         private IWitness GetSuspect(string witnessName)
         {
             switch (witnessName)
             {
-                case "Caleb":
+                case WitnessNames.CalebName:
                     return new DadWitness();
 
-                case "Danny":
+                case WitnessNames.DannyName:
                     return new DannyWitness();
 
-                case "Ethan":
+                case WitnessNames.EthanName:
                     return new BlindWitness();
 
-                case "Eli":
+                case WitnessNames.EliName:
                     return new HomelessWitness();
 
-                case "Marta":
+                case WitnessNames.MartaName:
                     return new HouseKeeperWitness();
 
-                case "Olivia":
+                case WitnessNames.OliviaName:
                     return new MotherWitness();
 
                 default:
