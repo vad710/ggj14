@@ -47,6 +47,13 @@ public class SceneBuilder : MonoBehaviour {
 		theHole.setObjectProperties(witness.HoleCommentary, witness.HolePosition, witness.HoleSize, witness.SawHole, this);
 		theJacket.setObjectProperties(witness.JacketCommentary, witness.JacketPosition, witness.JacketSize, witness.SawJacket, this);
 
+		if(witness.WhoAmI == "BlindWitness"){
+			blindBackground.SetActive(true);
+		}
+		else{
+			blindBackground.SetActive(false);
+		}
+
 		writeAchievement("New Witness! The duuuude");
 	}
 

@@ -6,6 +6,8 @@ namespace Assets.Script.Witnesses
     {
 		public HomelessWitness()
         {
+			this.WhoAmI = "HomelessWitness";
+
 			this.SawGun = false;
 			this.GunPosition = new Vector2(-.26f, -2.3f);
 			this.GunSize = new Vector2(1,1);
@@ -31,6 +33,8 @@ namespace Assets.Script.Witnesses
 			this.JacketSize = new Vector2(1,1);
 			this.JacketCommentary = "Boy, I could really use a nice jacket like that on these very cold nights.";
 		}
+
+		public string WhoAmI { get; private set; }
 
 		public bool SawGun { get; private set; }
 		public Vector2 GunPosition { get; private set; }
