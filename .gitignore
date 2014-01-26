@@ -253,3 +253,10 @@ Temp
 *.unityproj
 *.sln
 *.userprefs
+*.browser
+
+*.aspx
+
+*.config
+
+*.map
