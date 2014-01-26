@@ -32,6 +32,7 @@ namespace Assets.Script
 		string JacketCommentary { get; }
 
         string LeftFolderText { get; set; }
+        string RightFolderText { get; set; }
 
 	}
 }

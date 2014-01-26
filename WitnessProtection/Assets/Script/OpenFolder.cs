@@ -39,12 +39,19 @@ namespace Assets.Script
 
             GameState.Instance().LastFolder = parent;
 
-            GameState.Instance().WitnessToInvestigate = this.GetSuspect(WitnessName);
+            var witnessToInvestigate = this.GetSuspect(WitnessName);
+
+            GameState.Instance().WitnessToInvestigate = witnessToInvestigate;
 
             //show the opened folder
             OpenedFolder.SetActive(true);
             //TODO: Setup data of the folder here
 
+
+            //TextLeft
+            //GameObject.Find
+            //GameObject.Find("TextLeft").GetComponents<GUIText>().text = witnessToInvestigate.LeftFolderText;
+            //TODO: Update the text here
         }
 
         private IWitness GetSuspect(string witnessName)

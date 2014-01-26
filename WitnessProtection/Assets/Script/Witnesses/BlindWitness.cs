@@ -63,5 +63,6 @@ namespace Assets.Script.Witnesses
 		public Vector2 JacketSize { get; private set; }
 		public string JacketCommentary { get; private set; }
         public string LeftFolderText { get; set; }
+        public string RightFolderText { get; set; }
     }
 }
