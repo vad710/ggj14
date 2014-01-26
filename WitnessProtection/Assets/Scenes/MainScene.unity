@@ -1447,6 +1447,8 @@ MonoBehaviour:
   theCamera: {fileID: 1041249518}
   normalBackground: {fileID: 936762527}
   blindBackground: {fileID: 2126695670}
+  ClueSound: {fileID: 8300000, guid: 9ff541a9534a74ce28b923f408320e97, type: 3}
+  ClueSound2: {fileID: 8300000, guid: 5cbfbeda83b2e437fa2cf27173080faa, type: 3}
 --- !u!1001 &1610761823
 Prefab:
   m_ObjectHideFlags: 0

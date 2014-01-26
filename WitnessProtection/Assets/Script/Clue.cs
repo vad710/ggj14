@@ -62,6 +62,7 @@ public class Clue : MonoBehaviour {
 	void OnMouseOver(){
 		if(this.transform.localScale.x == .4f){return;}
 		renderer.material.color = new Color(1, 1, 1,.6f);
+		
 	}
 
 	void OnMouseExit(){
@@ -74,6 +75,7 @@ public class Clue : MonoBehaviour {
 		renderer.material.color = new Color(1, 1, 1,1);
 		Debug.Log(clueText);
 		theSceneBuilder.writeClue(clueText, textPosition);
+		// theSceneBuilder.hearClue();
 	}
 }
 }

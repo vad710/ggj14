@@ -39,6 +39,9 @@ public class SceneBuilder : MonoBehaviour {
 	public GameObject normalBackground;
 	public GameObject blindBackground;
 
+	public AudioClip ClueSound;
+	public AudioClip ClueSound2;
+
 	int tick;
 
 	// Use this for initialization
@@ -128,13 +131,24 @@ public class SceneBuilder : MonoBehaviour {
 		clueFace.sprite = upperCornerPhoto.sprite;
 		checkForAchievements(theText);
 	}
+	/*
+	public void hearClue()
+	{
+			var audiosource = GameObject.FindObjectOfType<AudioSource>();
+			audiosource.PlayOneShot(ClueSound);
+	}*/
 
 	void checkForAchievements(string theText){
+			var soundPlay = false;
+			var audiosource = GameObject.FindObjectOfType<AudioSource>();
+
 		if(theText == "I took the gun to defend myself against Caleb"){
 			if(!GameState.Instance().CalebUnlocked){
 				writeAchievement("New Witness: Caleb\nRelation: Father");
 				GameState.Instance().CalebUnlocked = true;
 				achievementFace.sprite = calebSprite;
+				audiosource.PlayOneShot(ClueSound2);
+					soundPlay = true;
 			}
 		}
 		if(theText == "What is my son's toy doing here?"){
@@ -143,6 +157,9 @@ public class SceneBuilder : MonoBehaviour {
 				writeAchievement("New Witness: Danny\nRelation: Maid's Kid");
 				GameState.Instance().DannyUnlocked = true;
 				achievementFace.sprite = dannySprite;
+				
+				audiosource.PlayOneShot(ClueSound2);
+					soundPlay = true;
 			}
 		}
 		if(theText == "That's where I shoved that hobo/thief’s face in."){
@@ -150,8 +167,14 @@ public class SceneBuilder : MonoBehaviour {
 				writeAchievement("New Witness: Eli\nRelation: Hobo");
 				GameState.Instance().EliUnlocked = true;
 				achievementFace.sprite = eliSprite;
+				audiosource.PlayOneShot(ClueSound2);
+					soundPlay = true;
 			}
 		}
+		if(soundPlay != true)
+			{
+				audiosource.PlayOneShot(ClueSound);
+			}
 	}
 
 	public void writeAchievement(string theText)
