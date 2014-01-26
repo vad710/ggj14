@@ -16,7 +16,7 @@ namespace Assets.Script.Witnesses
 			this.SawPurse = true;
 			this.PursePosition = new Vector2(-5.92f, -.25f);
 			this.PurseSize = new Vector2(1,1);
-			this.PurseCommentary = "That's what I came in here looking for.";
+			this.PurseCommentary = "That's what I came in looking for. Either that or some booze *hiccup*";
 			
 			this.SawToy = false;
 			this.ToyPosition = new Vector2(4.57f,-4.0f);
@@ -26,12 +26,15 @@ namespace Assets.Script.Witnesses
 			this.SawHole = true;
 			this.HolePosition = new Vector2(-1.76f,3.37f);
 			this.HoleSize = new Vector2(1,1);
-			this.HoleCommentary = "I was just lookin' for some cash... and that man tore in here like a barrel of whips!";
+			this.HoleCommentary = "This guy flies in like a bat outta hell and attacks me.";
 			
 			this.SawJacket = true;
 			this.JacketPosition = new Vector2(-5.12f,-3.75f);
 			this.JacketSize = new Vector2(1,1);
-			this.JacketCommentary = "Boy, I could really use a nice jacket like that on these very cold nights.";
+			this.JacketCommentary = "Boy, I could really use a nice jacket like that on these cold days.";
+
+			this.LeftFolderText = "\"Now if you got me under “oath” detective, I’ll admit i usually go through the open rooms lookin’ for some shtuff *hiccup*. Sometimes I get lucky: a purse here, a wallet there. You’d be surprised how often people leave their doors open! *hiccup*. Idiots. Anyway, somethin’ woke me up and I needed a drink. I see this chick leaving 14b so I went for a look see. Unlocked. Am I good or am I good?";
+			this.RightFolderText = "She had some nice stuff man, but someone knew I was in there and scared the $h!t outta me, *hiccup* busted in and came after me! He and I tussled for a few, but he didn’t know who he was dealing with heh *hiccup*. I was out the back like a thief in the night, *hiccup*. This blood on me ain’t no child’s so you can’t pin nothin’ on me detective.\"";
 		}
 
 		public string WhoAmI { get; private set; }
