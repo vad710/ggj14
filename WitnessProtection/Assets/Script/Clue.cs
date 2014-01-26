@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+namespace Assets.Script
+{
+
 public class Clue : MonoBehaviour {
 
 	string clueText;
@@ -33,12 +36,22 @@ public class Clue : MonoBehaviour {
 		this.gameObject.transform.localScale = clueSize;
 		//	Vector3 intermediatePos = Camera.WorldToScreenPoint(cluePosition);
 
-		if(cluePosition.y < -2){
-			textPosition = new Vector3(cluePosition.x, cluePosition.y + 1.8f, -2);
+		float clueToY = cluePosition.y;
+		float clueToX = cluePosition.x;
+		if(clueToY < 0){
+			clueToY += 2;
 		}
 		else{
-			textPosition = new Vector3(cluePosition.x, cluePosition.y - 1.8f, -2);
+			clueToY -= 2;
 		}
+		if(clueToX < -4.5f){
+			clueToX = -4.5f;
+		}
+		else if(clueToX > 5){
+			clueToX = 5;
+		}
+
+		textPosition = new Vector3(clueToX,clueToY, -2);
 
 	}
 
@@ -62,4 +75,5 @@ public class Clue : MonoBehaviour {
 		Debug.Log(clueText);
 		theSceneBuilder.writeClue(clueText, textPosition);
 	}
+}
 }

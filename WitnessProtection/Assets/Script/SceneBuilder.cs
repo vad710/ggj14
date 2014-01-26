@@ -3,19 +3,37 @@ using Assets.Script.Witnesses;
 using UnityEngine;
 using System.Collections;
 
+namespace Assets.Script
+{
+
 public class SceneBuilder : MonoBehaviour {
 	public Clue theGun;
 	public Clue thePurse;
 	public Clue theToy;
 	public Clue theHole;
 	public Clue theJacket;
-	public Clue clearClue;
+//	public Clue clearClue;
 
-	public GUIText clueText;
-	public GUITexture clueBox;
+	public SpriteRenderer upperCornerPhoto;
 
-	public GUIText achievementText;
-	public GUITexture achievementBox;
+	public Sprite ethanSprite;
+	public Sprite eliSprite;
+	public Sprite oliviaSprite;
+	public Sprite calebSprite;
+	public Sprite dannySprite;
+	public Sprite martaSprite;
+
+//	public GUIText clueText;
+//	public GUITexture clueBox;
+//	public GUITexture clueFace;
+
+	public GameObject cluePopUp;
+	public SpriteRenderer clueFace;
+	public TextMesh clueText;
+
+	public TextMesh achievementText;
+	public SpriteRenderer achievementFace;
+	public GameObject achievementBox;
 
 	public Camera theCamera;
 	public GameObject normalBackground;
@@ -29,6 +47,7 @@ public class SceneBuilder : MonoBehaviour {
 		tick = 0;
 
 		makeSceneForWitness(0);
+		achievementBox.SetActive(false);
 
 	    if (GameState.Instance().WitnessToInvestigate == null)
 	    {
@@ -47,13 +66,31 @@ public class SceneBuilder : MonoBehaviour {
 		theToy.setObjectProperties(witness.ToyCommentary, witness.ToyPosition, witness.ToySize, witness.SawToy, this);
 		theHole.setObjectProperties(witness.HoleCommentary, witness.HolePosition, witness.HoleSize, witness.SawHole, this);
 		theJacket.setObjectProperties(witness.JacketCommentary, witness.JacketPosition, witness.JacketSize, witness.SawJacket, this);
-		clearClue.setObjectProperties("", new Vector3(-20,-20,5), new Vector3(0,0,0), false, this);
+	//	clearClue.setObjectProperties("", new Vector3(-20,-20,5), new Vector3(0,0,0), false, this);
 
 		if(witness.WhoAmI == "Ethan"){
 			blindBackground.SetActive(true);
+			upperCornerPhoto.sprite = ethanSprite;
 		}
-		else{
+		else if(witness.WhoAmI == "Eli"){
 			blindBackground.SetActive(false);
+			upperCornerPhoto.sprite = eliSprite;
+		}
+		else if(witness.WhoAmI == "Olivia"){
+			blindBackground.SetActive(false);
+			upperCornerPhoto.sprite = oliviaSprite;
+		}
+		else if(witness.WhoAmI == "Marta"){
+			blindBackground.SetActive(false);
+			upperCornerPhoto.sprite = martaSprite;
+		}
+		else if(witness.WhoAmI == "Danny"){
+			blindBackground.SetActive(false);
+			upperCornerPhoto.sprite = dannySprite;
+		}
+		else if(witness.WhoAmI == "Caleb"){
+			blindBackground.SetActive(false);
+			upperCornerPhoto.sprite = calebSprite;
 		}
 
 	//	writeAchievement("New Witness! The duuuude");
@@ -66,22 +103,29 @@ public class SceneBuilder : MonoBehaviour {
 	//	theAxe.transform.localPosition = new Vector3(2.0f,-.4f,-1);
 
 		clueText.text = "";
-		clueBox.enabled = false;
+		cluePopUp.SetActive(false);
 
 	//	writeClue ();
 	}
 
 	public void writeClue(string theText, Vector3 thePosition)
     {
-		clueBox.enabled = true;
+		cluePopUp.SetActive(true);
+	//	clueBox.enabled = true;
+	//	clueFace.enabled = true;
 
-		var screenPosition = theCamera.WorldToScreenPoint(thePosition);
-		var guiPosition = new Vector2(screenPosition.x / Screen.width, screenPosition.y / Screen.height);
-		clueBox.transform.position = GUIUtility.ScreenToGUIPoint(guiPosition);
+	//	var screenPosition = theCamera.WorldToScreenPoint(thePosition);
+	//	var guiPosition = new Vector2(screenPosition.x / Screen.width, screenPosition.y / Screen.height);
+	//	clueBox.transform.position = GUIUtility.ScreenToGUIPoint(guiPosition);
 
-		clueBox.transform.position = new Vector3(clueBox.transform.position.x,clueBox.transform.position.y,-2);
+	//	clueBox.transform.position = new Vector3(clueBox.transform.position.x,clueBox.transform.position.y,-2);
+		cluePopUp.transform.position = thePosition;
+
 		clueText.text = theText;
+		clueText.GetComponent<TextWrapper>().Wrap();
 
+	//	upperCornerPhoto.sprite = dannySprite;
+		clueFace.sprite = upperCornerPhoto.sprite;
 		checkForAchievements(theText);
 	}
 
@@ -90,6 +134,7 @@ public class SceneBuilder : MonoBehaviour {
 			if(!GameState.Instance().CalebUnlocked){
 				writeAchievement("New Witness: Caleb\nRelation: Father");
 				GameState.Instance().CalebUnlocked = true;
+				achievementFace.sprite = calebSprite;
 			}
 		}
 		if(theText == "What is my son's toy doing here?"){
@@ -97,29 +142,30 @@ public class SceneBuilder : MonoBehaviour {
 				Debug.Log("son's toy");
 				writeAchievement("New Witness: Danny\nRelation: Maid's Kid");
 				GameState.Instance().DannyUnlocked = true;
+				achievementFace.sprite = dannySprite;
 			}
 		}
 		if(theText == "That's where I shoved the hobo's face"){
 			if(!GameState.Instance().EliUnlocked){
 				writeAchievement("New Witness: Eli\nRelation: Hobo");
 				GameState.Instance().EliUnlocked = true;
+				achievementFace.sprite = eliSprite;
 			}
 		}
 	}
 
 	public void writeAchievement(string theText)
 	{
-		achievementBox.enabled = true;
-		achievementText.enabled = true;
+		achievementBox.SetActive(true);
+
 		achievementText.text = theText;
-	//	achievementBox.color = new Color(1,1,1,1);
-	//	achievementText.color = new Color(0,0,0,1);
+	//		achievementText.GetComponent<TextWrapper>().Wrap ();
 
 		tick = 0;
 	}
 
 	void Update(){
-		if(achievementBox.enabled){
+		if(achievementBox.activeSelf){
 			tick += 1;
 			if(tick < 60){
 				//achievementBox.color.a = 1;
@@ -129,11 +175,11 @@ public class SceneBuilder : MonoBehaviour {
 			//	achievementText.color = new Color(0,0,0,(90.0f-tick)/30.0f);
 			}
 			else{
-				achievementBox.enabled = false;
-				achievementText.enabled = false;
+				achievementBox.SetActive(false);
 			}
 
 		}
 
 	}
+}
 }
