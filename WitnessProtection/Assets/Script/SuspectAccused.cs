@@ -57,12 +57,22 @@ public class SuspectAccused : MonoBehaviour {
 
 	void OnMouseDown(){
 	//	renderer.material.color = new Color(0, 0, 0,);
-		if(!fullSize){
-			increasing = true; decreasing = false; tinySize = false; 
-			this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, -1);
+	    if (!fullSize)
+	    {
+	        increasing = true;
+	        decreasing = false;
+	        tinySize = false;
+	        this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x,
+	            this.gameObject.transform.position.y, -1);
 
-		}
-		else{accuseMe();}
+	    }
+	    else
+	    {
+	        accuseMe();
+	    }
+
+        var soundSource = GameObject.FindObjectOfType<AudioSource>();
+        soundSource.PlayOneShot(soundSource.clip);
 	}
 
 	void accuseMe(){
