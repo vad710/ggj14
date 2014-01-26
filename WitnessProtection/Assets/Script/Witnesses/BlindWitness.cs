@@ -27,8 +27,8 @@ namespace Assets.Script.Witnesses
 			this.HoleCommentary = "There was a fight!  I heard it!";
 
 			this.SawJacket = false;
-			this.JacketPosition = new Vector2(2,-2);
-			this.JacketSize = new Vector2(.7f,.7f);
+			this.JacketPosition = new Vector2(-5.12f,-3.75f);
+			this.JacketSize = new Vector2(1,1);
 			this.JacketCommentary = "";
 			
 
