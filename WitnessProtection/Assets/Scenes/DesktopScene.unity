@@ -113,7 +113,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 15, y: 10}
+  m_Size: {x: 10, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &9618820
 MonoBehaviour:
@@ -664,7 +664,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 15, y: 10}
+  m_Size: {x: 10, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &637223901
 MonoBehaviour:
@@ -837,7 +837,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 15, y: 10}
+  m_Size: {x: 10, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &717931130
 MonoBehaviour:
@@ -1114,6 +1114,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: WitnessName
       value: Marta
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
@@ -1472,7 +1480,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 15, y: 10}
+  m_Size: {x: 10, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1267751104
 MonoBehaviour:
@@ -1623,7 +1631,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 15, y: 10}
+  m_Size: {x: 10, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1326745642
 SpriteRenderer:
@@ -1916,6 +1924,14 @@ Prefab:
       propertyPath: WitnessName
       value: Eli
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1071744424}
@@ -1999,6 +2015,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: WitnessName
       value: Ethan
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
@@ -2109,6 +2133,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
       propertyPath: WitnessName
       value: Danny
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
@@ -2436,6 +2468,14 @@ Prefab:
       propertyPath: WitnessName
       value: Caleb
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1022450051}
@@ -2597,6 +2637,14 @@ Prefab:
       propertyPath: WitnessName
       value: Olivia
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
+      propertyPath: m_Size.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20fe072d0be635f43b6e0be62df2ab39, type: 2}
   m_RootGameObject: {fileID: 1247042643}
@@ -2641,7 +2689,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 15, y: 10}
+  m_Size: {x: 10, y: 7}
   m_Center: {x: 0, y: 0}
 --- !u!114 &2021279783
 MonoBehaviour:
