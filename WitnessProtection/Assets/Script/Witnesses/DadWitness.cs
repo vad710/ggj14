@@ -6,7 +6,7 @@ namespace Assets.Script.Witnesses
 	public class DadWitness : IWitness
 	{
 	// Use this for initialization
-	void Start () {
+	public DadWitness () {
 		this.SawGun = true;
 		this.GunPosition = new Vector2(4.6f,-3.3f);
 		this.GunSize = new Vector2(.6f,.6f);

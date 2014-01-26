@@ -7,13 +7,13 @@ namespace Assets.Script.Witnesses
 	{
 
 	// Use this for initialization
-	void Start () {
+	public DannyWitness () {
 		this.SawGun = true;
 		this.GunPosition = new Vector2(4.6f,-3.3f);
 		this.GunSize = new Vector2(.6f,.6f);
 		this.GunCommentary = "My mommy tells me never to play with guns.";
 		
-		this.SawPurse = true;
+		this.SawPurse = false;
 		this.PursePosition = new Vector2(-1.1f,1.12f);
 		this.PurseSize = new Vector2(.6f,.6f);
 		this.PurseCommentary = "";
