@@ -33,7 +33,8 @@ namespace Assets.Script.Witnesses
 			this.JacketSize = new Vector2(1,1);
 			this.JacketCommentary = "";
 			
-
+			this.LeftFolderText = "I was fully blind by the age 15. I hated god, everyone, and the world for making it so. You know how your other senses are supposed to become stronger to compensate? Well lemme tell you, my sense of taste is out of this world. I get by, in fact, I do better than most! I’m quite the connoisseur with these tastebuds of mine. Heading out to Italy next week, my cousin’s got a vineyard..can you say party?? My hearing is great too but what I heard.. That woman’s scream will haunt me for years to come..";
+			this.RightFolderText = "You say it was the kid who was shot? Well I heard the shot alright, loud and clear, but there was no commotion prior. But I guess things do go “bump” (or “bang!” heh) in the night.. Lot of commotion going on, a fight between two men i’m guessing. What the hell is this all about anyway? I feel an ill omen.";
         }
 
 		public string WhoAmI { get; private set; }

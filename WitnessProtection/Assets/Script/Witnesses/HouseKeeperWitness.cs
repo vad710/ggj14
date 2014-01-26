@@ -32,6 +32,9 @@ namespace Assets.Script.Witnesses
 			this.JacketPosition = new Vector2(-5.12f,-3.75f);
 			this.JacketSize = new Vector2(1,1);
 			this.JacketCommentary = "";
+
+			this.LeftFolderText = "Ai, Dios mío!I don’t know anyting! Don’t accuse me! I’ve worked at dis motel for seben years, my family lives here and we make honest living in the U.S. I have noting to lose, and everyting to gain! One day my familia will move from here. One day we’ll live in a house, my kids will go to college -- my boy! He met the little nino, the one who was murdered—Oh! and I’ll have a garden! Until then I take it one day at a time. Cleaning these rooms. This motel.. it’s haunted, dectective. It’s the trus! Bad tings continue to happen.";
+			this.RightFolderText = "You have a murder on your hands? Well I’m not surprised. 'El Diablo a la dentro.' I feel condemned here at times, that the forces of nature, the economy, or perhaps something more is keeping me and my people back. I come in, I see the body, I clean up the mess, I have nothing else to say.";
 		}
 
 		public string WhoAmI { get; private set; }
