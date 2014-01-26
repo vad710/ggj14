@@ -244,7 +244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &243814762
 Transform:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 243814761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .170000002, y: .100000001, z: 0}
-  m_LocalScale: {x: .100000001, y: 0, z: 1}
+  m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children:
   - {fileID: 1081767052}
   m_Father: {fileID: 0}
@@ -264,7 +264,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 243814761}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 081819a6fe1a34446826c2e00bcfc41d, type: 3}
+  m_Texture: {fileID: 2800000, guid: af69a33f039904e46abecff82f82be0b, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -511,6 +511,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d3fdfd8d8c90e4150818645a8f94e510, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6100000, guid: d3fdfd8d8c90e4150818645a8f94e510, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d3fdfd8d8c90e4150818645a8f94e510, type: 2}
@@ -527,6 +531,7 @@ GameObject:
   - 4: {fileID: 936762528}
   - 212: {fileID: 936762530}
   - 61: {fileID: 936762529}
+  - 114: {fileID: 936762531}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -554,7 +559,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2.13000011, y: 2.37000012}
+  m_Size: {x: 16, y: 10}
   m_Center: {x: -2.38418579e-07, y: 0}
 --- !u!212 &936762530
 SpriteRenderer:
@@ -579,6 +584,19 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 3e91cab1bcd4f4c8e9e8acd9947149ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &936762531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936762527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11512ff3bdc49589a1ab368a9333a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueText: {fileID: 660686791}
+  clueBox: {fileID: 1305416015}
 --- !u!1 &973941078
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,15 +875,15 @@ GUIText:
   m_GameObject: {fileID: 1081767050}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: New Witness! The duuuuuude
+  m_Text: 'New Witness: Nobody'
   m_Anchor: 4
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: ca62bd918e434e34f8beed103dbcf1ba, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 24
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1056,6 +1074,7 @@ MonoBehaviour:
   theToy: {fileID: 211947945}
   theHole: {fileID: 2019810699}
   theJacket: {fileID: 1510050087}
+  clearClue: {fileID: 0}
   clueText: {fileID: 660686791}
   clueBox: {fileID: 1305416015}
   achievementText: {fileID: 1081767051}
@@ -1192,7 +1211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2126695671
 Transform:
   m_ObjectHideFlags: 0
