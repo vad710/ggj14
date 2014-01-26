@@ -6,7 +6,7 @@ namespace Assets.Script.Witnesses
     {
 		public BlindWitness()
         {
-			this.WhoAmI = WitnessNames.EliName;
+			this.WhoAmI = WitnessNames.EthanName;
 
 			this.SawGun = true;
 			this.GunPosition = new Vector2(-.26f, -2.3f);

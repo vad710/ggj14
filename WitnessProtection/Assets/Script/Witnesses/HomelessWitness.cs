@@ -5,8 +5,8 @@ namespace Assets.Script.Witnesses
     public class HomelessWitness : IWitness
     {
 		public HomelessWitness()
-        {
-			this.WhoAmI = "HomelessWitness";
+		{
+		    this.WhoAmI = WitnessNames.EliName;
 
 			this.SawGun = false;
 			this.GunPosition = new Vector2(-.26f, -2.3f);

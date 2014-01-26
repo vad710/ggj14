@@ -6,7 +6,7 @@ namespace Assets.Script.Witnesses
     {
         public HouseKeeperWitness()
         {
-			this.WhoAmI = "HouseKeeperWitness";
+            this.WhoAmI = WitnessNames.MartaName;
 
 			this.SawGun = false;
 			this.GunPosition = new Vector2(-.26f, -2.3f);
