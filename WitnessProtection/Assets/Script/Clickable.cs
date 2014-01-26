@@ -8,8 +8,12 @@ namespace Assets.Script
 		SwitchToDesk,
 		ToDeskFromMotel,
 		ToMotelFromDesk,
+		ToTV,
+		ToSolve,
+		ToTitleScreen,
+		ToDeskFromSolve,
 
-        BeAwesome,
+		BeAwesome,
 
     }
 
@@ -47,13 +51,32 @@ namespace Assets.Script
 					Application.LoadLevel("DesktopScene");
 				break;
 
-
 				case ClickCommands.ToMotelFromDesk:
 					GameState.Instance().previousSceneString = "DesktopScene";
 					Application.LoadLevel("MainScene");
 				break;
-            }
-        }
+
+				case ClickCommands.ToTV:
+					GameState.Instance().previousSceneString = "TitleScene";
+					Application.LoadLevel("NewsScene");
+					break;
+
+				case ClickCommands.ToSolve:
+					GameState.Instance().previousSceneString = "DesktopScene";
+					Application.LoadLevel("SolveScene");
+					break;
+
+				case ClickCommands.ToTitleScreen:
+					GameState.Instance().previousSceneString = "SolveScene";
+					Application.LoadLevel("TitleScene");
+					break;
+				case ClickCommands.ToDeskFromSolve:
+					GameState.Instance().previousSceneString = "SolveScene";
+					Application.LoadLevel("DesktopScene");
+					break;
+
+			}
+		}
 
     }
 }

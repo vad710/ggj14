@@ -641,6 +641,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1127503014}
+  - 114: {fileID: 1127503015}
+  - 61: {fileID: 1127503017}
+  - 114: {fileID: 1127503016}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -665,6 +668,42 @@ Transform:
   - {fileID: 131393812}
   - {fileID: 1107762330}
   m_Father: {fileID: 0}
+--- !u!114 &1127503015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127503013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40f86ac41d124d0eaee381c4136515e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1127503016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127503013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acadae56cf8afe043bb13fb843d95c3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onMouseOver: 
+  onMouseExit: 
+  OnClickCommand: 0
+--- !u!61 &1127503017
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127503013}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1882552279
 GameObject:
   m_ObjectHideFlags: 0
