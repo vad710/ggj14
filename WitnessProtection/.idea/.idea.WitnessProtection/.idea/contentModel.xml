@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Code\ggj14\WitnessProtection" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Fonts" t="Include">
+          <e p="Daniel Midgley.txt" t="Include" />
+        </e>
+        <e p="Script" t="Include">
+          <e p="ClearClues.cs" t="Include" />
+          <e p="Clickable.cs" t="Include" />
+          <e p="Clue.cs" t="Include" />
+          <e p="FolderBackButton.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
+          <e p="IWitness.cs" t="Include" />
+          <e p="NewsMaker.cs" t="Include" />
+          <e p="Notebook.cs" t="Include" />
+          <e p="NotebookLoader.cs" t="Include" />
+          <e p="OpenFolder.cs" t="Include" />
+          <e p="SceneBuilder.cs" t="Include" />
+          <e p="SceneTransition.cs.cs" t="Include" />
+          <e p="SuspectAccused.cs" t="Include" />
+          <e p="TextWrapper.cs" t="Include" />
+          <e p="ToggleCredits.cs" t="Include" />
+          <e p="UnlockFolders.cs" t="Include" />
+          <e p="UnSolve.cs" t="Include" />
+          <e p="Witnesses" t="Include">
+            <e p="BlindWitness.cs" t="Include" />
+            <e p="DadWitness.cs" t="Include" />
+            <e p="DannyWitness.cs" t="Include" />
+            <e p="HomelessWitness.cs" t="Include" />
+            <e p="HouseKeeperWitness.cs" t="Include" />
+            <e p="MotherWitness.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="WitnessProtection.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Vinny\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vinny\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_WitnessProtection.1797659331.00" t="ExcludeRecursive" />
+  </component>
+</project>

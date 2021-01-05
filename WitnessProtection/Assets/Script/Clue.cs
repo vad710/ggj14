@@ -61,18 +61,18 @@ public class Clue : MonoBehaviour {
 
 	void OnMouseOver(){
 		if(this.transform.localScale.x == .4f){return;}
-		renderer.material.color = new Color(1, 1, 1,.6f);
+		GetComponent<Renderer>().material.color = new Color(1, 1, 1,.6f);
 		
 	}
 
 	void OnMouseExit(){
 		this.transform.localScale = clueSize;
-		renderer.material.color = new Color(1, 1, 1,1);
+		GetComponent<Renderer>().material.color = new Color(1, 1, 1,1);
 	}
 
 	void OnMouseDown(){
 		this.transform.localScale = new Vector3(clueSize.x+.05f,clueSize.y+.05f,1);
-		renderer.material.color = new Color(1, 1, 1,1);
+		GetComponent<Renderer>().material.color = new Color(1, 1, 1,1);
 		Debug.Log(clueText);
 		theSceneBuilder.writeClue(clueText, textPosition);
 		// theSceneBuilder.hearClue();

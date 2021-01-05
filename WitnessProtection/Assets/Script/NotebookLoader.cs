@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Script
 {
@@ -22,7 +23,7 @@ namespace Assets.Script
                 suspectList.AppendLine(suspect);
             }
 
-            var guiTextObject = this.GetComponentsInChildren<GUIText>().First(c => c.name == "SuspectNames");
+            var guiTextObject = this.GetComponentsInChildren<Text>().First(c => c.name == "SuspectNames");
 
             guiTextObject.text = suspectList.ToString();
 
